@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "用户协议",
+  "titleNView": {
+    "type": "default",
+    "titleText": "用户协议"
+  },
+  "usingComponents": {
+    "back": "/components/back"
+  }
+}

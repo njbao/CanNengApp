@@ -1,0 +1,31 @@
+.terminal-status-all-block{
+	background: #f0f0f0;
+}
+.terminal-status-all-each-block{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 80rpx;
+	background: white;
+	margin-bottom: 4rpx;
+	font-size: 30rpx;
+	padding: 0 40rpx;
+	box-sizing: border-box;
+}
+.terminal-status-all-each-block-sucess{
+	color: #78D50E;
+}
+.terminal-status-all-each-block-fail{
+	color: #FF5059;
+}
+

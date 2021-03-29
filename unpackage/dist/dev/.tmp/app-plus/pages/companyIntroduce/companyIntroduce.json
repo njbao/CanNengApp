@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "公司简介",
+  "titleNView": {
+    "type": "default",
+    "titleText": "公司简介"
+  },
+  "usingComponents": {
+    "back": "/components/back"
+  }
+}

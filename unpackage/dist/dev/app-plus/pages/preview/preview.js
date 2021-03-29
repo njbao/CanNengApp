@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"preview-block{ width: 100%; height: 100%; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; }\n.",[1],"preview-pic{ width: ",[0,1334],"; height: ",[0,750],"; }\n",],undefined,{path:"./pages/preview/preview.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/preview/preview.wxml') } }));

@@ -1,0 +1,1 @@
+<view><quit vue-id="1" bind:__l="__l"></quit><view class="content-block"><view class="login-explain">输入短信验证码</view><view class="login-detail"><view class="login-agreement">验证码已发送至</view><view class="login-user">(+86)</view><view class="login-user">{{phoneNum}}</view></view></view></view>

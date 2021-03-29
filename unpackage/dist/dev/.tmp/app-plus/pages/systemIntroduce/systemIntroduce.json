@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "系统介绍",
+  "titleNView": {
+    "type": "default",
+    "titleText": "系统介绍"
+  },
+  "usingComponents": {
+    "back": "/components/back"
+  }
+}

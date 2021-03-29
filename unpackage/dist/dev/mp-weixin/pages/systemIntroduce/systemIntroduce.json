@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "系统介绍",
+  "usingComponents": {
+    "back": "/components/back"
+  }
+}

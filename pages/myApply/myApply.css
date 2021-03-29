@@ -1,0 +1,72 @@
+page{
+	background: #F0F0F0;
+}
+/* 主体开始 */
+.data-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.content-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 20rpx;
+	background: #FFFFFF;
+}
+.content-line{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 72rpx;
+	padding: 0 40rpx;
+}
+.content-line-one-left{
+	color: #303233;
+	font-size: 15px;
+	white-space: nowrap;
+	font-weight: 600;
+}
+.content-line-one-right{
+	font-size: 14px;
+	color: #999999;
+	white-space: nowrap;
+}
+.content-line-left{
+	font-size: 15px;
+	color: #303233;
+	white-space: nowrap;
+}
+.content-line-right{
+	font-size: 13px;
+	color: #999999;
+	white-space: nowrap;
+}
+/* 分割线 */
+.line{
+	background: #F0F0F0;
+	height: 20rpx;
+}
+.line-fine{
+	background: #F0F0F0;
+	height: 2rpx;
+}
+/* 重试页面开始 */
+.error-block{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -10%;
+	margin-top: 300rpx;
+}
+.retry_button{
+	margin-top: 10rpx;
+	border-radius: 10%;
+}
+/* 重试页面结束 */
+/* 主体结束 */

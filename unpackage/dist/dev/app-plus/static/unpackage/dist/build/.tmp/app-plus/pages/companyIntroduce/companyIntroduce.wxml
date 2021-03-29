@@ -1,0 +1,1 @@
+<view><back vue-id="1" pageNameFlag="{{pageNameFlag}}" showFlag="{{showFlag}}" pageName="{{pageName}}" bind:__l="__l"></back>公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍公司介绍</view>

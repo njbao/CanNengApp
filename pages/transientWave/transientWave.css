@@ -1,0 +1,34 @@
+/* 波形图开始 */
+.waveform-block{
+	height: 562rpx;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20rpx;
+	background:rgba(255,255,255,1);
+}
+.waveform-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 30rpx;
+	height: 42rpx;
+}
+.waveform-title-left{
+	margin-left: 40rpx;
+	width: 6rpx;
+	height: 34rpx;
+}
+.waveform-title-right{
+	font-size: 30rpx;
+	color: #000000;
+	font-weight:500;
+	margin-left: 14rpx;
+}
+.waveform-pic{
+	width: 670rpx;
+	height: 424rpx;
+	margin-top: 20rpx;
+	margin-left: 40rpx;
+}
+/* 波形图结束 */

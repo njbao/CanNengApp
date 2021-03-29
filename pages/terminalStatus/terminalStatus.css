@@ -1,0 +1,184 @@
+page{
+	background: #F0F0F0;
+}
+/* 分割线 */
+.line{
+	background: #F0F0F0;
+	height: 20rpx;
+}
+.line-fine{
+	background: #F0F0F0;
+	height: 2rpx;
+}
+/* 时间开始 */
+.time-block{
+	height: 92rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 40rpx;
+	background: #FFFFFF 100%;
+}
+.time-block-left{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 44rpx;
+	align-items: center;
+}
+.calendar-pic{
+	height: 44rpx;
+	width: 44rpx;
+}
+.time-text{
+	color: #303233;
+	font-size: 30rpx;
+	margin-left: 20rpx;
+}
+.time-block-right{
+	height: 44rpx;
+	width: 44rpx;
+}
+/* 时间结束 */
+/* 总览开始 */
+.overview-block{
+	height: 92rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 40rpx;
+	background: #FFFFFF 100%;
+}
+.overview-block-text{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+} 
+.overview-block-text-left{
+	color: #303233;
+	font-size: 30rpx;
+	margin-left: 20rpx;
+}
+.overview-block-text-right{
+	color: #FF5059;
+	font-size: 30rpx;
+	margin-left: 20rpx;
+}
+/* 总览结束 */
+/* 图片开始 */
+.pic-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	padding: 30rpx 0;
+	background: #FFFFFF;
+	margin-top: 20rpx;
+}
+.pic-block-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 42rpx;
+	align-items: center;
+	box-sizing: border-box;
+	padding:0 40rpx;
+}
+.pic-block-title-left{
+	height: 34rpx;
+	width: 6rpx;
+}
+.pic-block-title-right{
+	color: #000000;
+	font-size: 30rpx;
+	margin-left: 14rpx;
+}
+.pic-block-pic{
+	height: 378rpx;
+	width: 670rpx;
+	margin-top: 30rpx;
+}
+/* 图片结束 */
+/* 画图开始 */
+.canvasView{
+	
+}
+.ec-canvas{
+}
+.legend-block{
+	height: 30rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.legend-block-left{
+	height: 30rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.legend-block-left-color{
+	height: 30rpx;
+	width: 30rpx;
+	background: #DAA520;
+}
+.legend-block-left-text{
+	font-size: 24rpx;
+	margin-left: 10rpx;
+}
+.legend-block-right{
+	height: 30rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 20rpx;
+}
+.legend-block-right-color{
+	height: 30rpx;
+	width: 30rpx;
+	background: #2E8B57;
+}
+.legend-block-right-text{
+	font-size: 24rpx;
+	margin-left: 10rpx;
+}
+/* 画图结束 */
+/* 中断信息开始 */
+.info-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 40rpx;
+	border-bottom: 10rpx #F0F0F0 solid;
+	font-size: 30rpx;
+	height: 200rpx;
+}
+.info-block-line-one{
+	font-size: 30rpx;
+}
+/* 中断信息结束 */
+/* 重试页面开始 */
+.error-block{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -10%;
+	margin-top: 300rpx;
+}
+.retry_button{
+	margin-top: 10rpx;
+	border-radius: 10%;
+}
+/* 重试页面结束 */

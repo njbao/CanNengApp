@@ -1,0 +1,194 @@
+page{
+	background: #F9F9F9;
+}
+/* 主体开始 */
+.body{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+/* 上部分开始 */
+.upper-block{
+	margin-top: 0rpx;
+	height: 472rpx;
+	background: #F9F9F9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.upper-block-done{
+	margin-top: 0rpx;
+	height: 314rpx;
+	background: #F9F9F9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.upper-block-inside{
+	margin-top: 0rpx;
+	height: 472rpx;
+	background-image: url('../../static/pic/background.png');
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.upper-block-inside-done{
+	margin-top: 0rpx;
+	height: 314rpx;
+	background-image: url('../../static/pic/background_done.png');
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.system-block{
+	height: 42rpx;
+	margin-top: 96rpx; 	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.system-pic{
+	width: 44rpx;
+	height: 42rpx;
+	margin-right: 60rpx;
+}
+/* 上部分结束 */
+/* 个人信息开始 */
+.role-block{
+	height: 114rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.left-block{
+	width: 114rpx;
+	height: 114rpx;
+	margin-left: 66rpx;
+}
+.head-pic{
+	width: 114rpx;
+	height: 114rpx;
+}
+.level-pic{
+	width: 44rpx;
+	height: 44rpx;
+	z-index: 1000;
+	position:absolute; 
+	top:230rpx;
+	left:130rpx;
+}
+.level-pic-done{
+	width: 44rpx;
+	height: 44rpx;
+	z-index: 1000;
+	position:absolute; 
+	top:218rpx;
+	left:130rpx;
+}
+.right-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 48rpx;
+}
+.name{
+	font-size: 38rpx;
+	color: #FFFFFFFF;
+}
+.info-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 16rpx;
+}
+.level-block{
+	width:132rpx;
+	height:34rpx;
+	background:rgba(54,106,215,1);
+	border-radius:16rpx;
+	font-size: 22rpx;
+	text-align: center;
+	color: #CEDEFF;
+}
+.phoneNum-block{
+	font-size: 22rpx;
+	color: #CEDEFF;
+	margin-left: 12rpx;
+}
+.level-up{
+	width: 690rpx;
+	height: 156rpx;
+	border-radius:12rpx;
+	margin: 60rpx 30rpx -10rpx 30rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-image: url('../../static/pic/level_up_background.png');
+	background-size: 100% 100%;
+	background-color: #F9F9F9;
+}
+.level-up-done{
+	width: 690rpx;
+	height: 156rpx;
+	margin: 60rpx 30rpx -10rpx 30rpx;
+}
+.level-up-pic-block{
+	width: 70rpx;
+	height: 70rpx;
+	margin: 22rpx 0rpx 64rpx 40rpx;
+}
+.level-up-pic{
+	width: 70rpx;
+	height: 70rpx;
+}
+.level-up-text{
+	margin-left: 24rpx;
+	height: 120rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background:rgba(255,255,255,1);
+}
+.level-up-text-top{
+	width: 128rpx;
+	height: 42rpx;
+	font-size: 30rpx;
+	color: #303233;
+	margin-top: 22rpx;
+}
+.level-up-text-bottom{
+	width: 384rpx;
+	height: 34rpx;
+	margin-top: 6rpx;
+	font-size: 24rpx;
+	color:#999999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.level-up-now{
+	width: 120rpx;
+	height: 120rpx;
+	font-size: 24rpx;
+	color: #4A4A4A;
+	margin-left: 6rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+}
+/* 个人信息结束 */
+/* 下半部分开始 */
+.lower-block{
+	height: 762rpx;
+	background:  #F9F9F9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 36rpx;
+}
+/* 下半部分结束 */
+/* 主体结束 */

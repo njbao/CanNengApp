@@ -1,0 +1,59 @@
+/* 主体开始 */
+.steadyIndex-block{
+	background:#F9F9F9;
+	padding-top: 20rpx;
+}
+/* 基础信息开始 */
+.index-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: #FFFFFF;
+}
+.index-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	
+	height: 102rpx;
+}
+.index-title-left{
+	width: 6rpx;
+	height: 34rpx;
+	margin-left: 40rpx;
+}
+.index-title-right{
+	height: 42rpx;
+	font-size: 30rpx;
+	color: #000000;
+	margin-left: 20rpx;
+} 
+.index-content{
+	height: 424rpx;
+	width: 670rpx;
+	margin: 20rpx 40rpx 56rpx 40rpx;
+}
+.index-content-pic{
+	height: 424rpx;
+	width: 670rpx;
+}
+/* 基础信息结束 */
+/* 重试页面开始 */
+.error-block{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -10%;
+	margin-top: 300rpx;
+}
+.retry_button{
+	margin-top: 10rpx;
+	border-radius: 10%;
+}
+/* 重试页面结束 */
+/* 主体结束 */

@@ -1,0 +1,119 @@
+page{
+	background: #F0F0F0;
+}
+/* 主体开始 */
+.terminal-body{
+	background: #F0F0F0;
+}
+/* 内容开始 */
+.terminal-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 522rpx;
+	background: #FFFFFF;
+	margin-bottom: 20rpx;
+}
+.terminal-content-line-one{
+	height: 166rpx;
+	color: #000000;
+	font-size: 30rpx;
+	margin: 0 40rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.terminal-content-line{
+	height: 2rpx;
+	background: #F0F0F0;
+}
+.terminal-content-line-two{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 78rpx;
+}
+.terminal-content-line-two-left{
+	width: 6rpx;
+	height: 34rpx;
+	margin-left: 40rpx;
+}
+.terminal-content-line-two-right{
+	margin-left: 14rpx;
+	font-size: 30rpx;
+	font-weight:500;
+}
+.terminal-content-line-three{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 40rpx;
+	height: 92rpx;
+}
+.terminal-content-line-three-left{
+	height: 42rpx;
+	font-size: 30rpx;
+	color: #303233;
+}
+.terminal-content-line-three-right{
+	height: 36rpx;
+	font-size: 26rpx;
+	color: #999999;
+}
+.terminal-content-line-four{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 40rpx;
+	height: 92rpx;
+}
+.terminal-content-line-four-left{
+	height: 42rpx;
+	font-size: 30rpx;
+	color: #303233;
+}
+.terminal-content-line-four-right{
+	height: 36rpx;
+	font-size: 26rpx;
+	color: #999999;
+}
+.terminal-content-line-five{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 40rpx;
+	height: 92rpx;
+}
+.terminal-content-line-five-left{
+	height: 42rpx;
+	font-size: 30rpx;
+	color: #303233;
+}
+.terminal-content-line-five-right{
+	height: 36rpx;
+	font-size: 26rpx;
+	color: #999999;
+}
+/* 内容结束 */
+/* 重试页面开始 */
+.error-block{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -10%;
+	margin-top: 300rpx;
+}
+.retry_button{
+	margin-top: 10rpx;
+	border-radius: 10%;
+}
+/* 重试页面结束 */
+/* 主体结束 */

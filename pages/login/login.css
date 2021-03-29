@@ -1,0 +1,199 @@
+/* 主体开始 */
+.content-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 40rpx;
+	margin-top: 54rpx;
+	margin-right: 40rpx;
+}
+.login-explain{
+	/* 字体PingFangSC-Regular */
+	font-size: 56rpx;
+	color: #000000;
+	/* color: #3928FC; */
+}
+.login-detail{
+	width: 494rpx;
+	height: 40rpx;
+	margin-top: 14rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.login-agreement{
+	font-size: 28rpx;
+	color: #999999;
+	white-space: nowrap;
+}
+.login-user{
+	font-size: 28rpx;
+	color: #517FB0;
+	white-space: nowrap;
+}
+/* 手机号开始 */
+.phone-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 142rpx;
+	border-bottom: solid 1px #D9D9D9;
+	width: 670rpx;
+	align-items: flex-end;
+
+}
+.phone-pic{
+	width: 20rpx;
+	height: 20rpx;
+	margin-bottom: 32rpx; 
+}
+.num{
+	font-size: 30rpx;
+	color: #333333;
+	margin-bottom: 24rpx;
+}
+.pull{
+	width: 44rpx;
+	height: 44rpx;
+	margin-bottom: 20rpx;
+}
+.phone{
+	 margin-left: 10rpx;
+	margin-bottom: 12rpx; 
+}
+.phone-placeholder{
+	color:#CCCCCC;
+	font-size:30rpx;
+}
+.password-placeholder{
+	color:#CCCCCC;
+	font-size:30rpx;
+}
+.phone-input{
+	font-size: 44rpx;
+	color: #333333;
+}
+/* 手机号结束 */
+/* 密码开始 */
+.password-block{
+	margin-top: 54rpx;
+	border-bottom: solid 1px #D9D9D9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.see-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.reset-block{
+	width: 88rpx;
+	height: 88rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.close{
+	width: 20rpx;
+	height: 20rpx;
+}
+.see{
+	width: 36rpx;
+	height: 36rpx;
+}
+.line{
+	width:1px;
+	height:24rpx;
+	background:rgba(217,217,217,1);
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+}
+/* 密码结束 */
+/* 记住我开始 */
+.rememberMe-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 40rpx;
+	align-items: center;
+	margin-top: 20rpx;
+}
+.rememberMe-pic{
+	height: 28rpx;
+	width: 28rpx;
+}
+.rememberMe-text{
+	color: #333333;
+	font-size: 28rpx;
+	margin-left: 14rpx;
+}
+/* 记住我结束 */
+/* 获取验证码按钮开始 */
+.login-vercode{
+	width: 658rpx;
+	height: 80rpx;
+	margin-top: 80rpx;
+	background: #3982FC;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.text{
+		color: #6CA3FF;
+		font-size: 32rpx;
+}
+.textHigh{
+		color: #FFFFFF;
+		font-size: 32rpx;
+}
+/* 获取验证码按钮结束 */
+/* 其他方式登录开始 */
+.login-other{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 34rpx;
+}
+.login-account{
+	width: 198rpx;
+	height: 34rpx;
+	color: #507EB0;
+	font-size: 24rpx;
+}
+.login-fast{
+	width: 102rpx;
+	height: 34rpx;
+	color: #507EB0;
+	font-size: 24rpx;
+}
+.login-right{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.login-line{
+	width:1px;
+	height:24rpx;
+	background:rgba(217,217,217,1);
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+}
+	
+/* 其他方式登录结束 */
+/* 介绍 */
+.introduce-block{
+	margin-top: 462rpx;
+	width: 680rpx;
+	height: 34rpx;
+	color: #D9D9D9;
+	font-size: 24rpx;
+	white-space: nowrap;
+	text-align: center;
+}
+/* 主体结束 */

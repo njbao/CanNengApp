@@ -1,0 +1,24 @@
+/* 重试页面开始 */
+.error-block{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -10%;
+	margin-top: 300rpx;
+}
+.retry_button{
+	margin-top: 10rpx;
+	border-radius: 10%;
+}
+.us-pic{
+	height: 200rpx;
+	width: 200rpx;
+}
+.us-text{
+	margin-top: 20rpx;
+}
+/* 重试页面结束 */

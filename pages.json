@@ -1,0 +1,227 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		 {
+		 	"path": "pages/login/login"
+		 
+		 },
+		 {
+		     "path" : "pages/spectrum/spectrum",
+		     "style" : {}
+		 }
+		 ,{
+		     "path" : "pages/condition/condition",
+		     "style" : {}
+		 },
+		 {
+		     "path" : "pages/dataIntegrityDetails/dataIntegrityDetails",
+		     "style" : {}
+		 },{
+		     "path" : "pages/terminalStatus/terminalStatus",
+		     "style" : {}
+		 }
+		 ,{
+		 	"path": "pages/chooseLine/chooseLine",
+		 	"style": {}
+		 }
+		 ,{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "uni-app"
+			}
+		},{
+			"path": "pages/report/report",
+			"style": {
+				// "backgroundColor":"#F0F0F0"
+			}
+		},
+		{
+			"path": "pages/information/information",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {}
+		},
+		{
+			"path": "pages/levelUp/levelUp",
+			"style": {}
+		}, {
+			"path": "pages/transientDetails/transientDetails",
+			"style": {}
+		}, {
+			"path": "pages/preview/preview",
+			"style": {}
+		}, {
+			"path": "pages/vercode/vercode",
+			"style": {}
+		},
+		 {
+			"path": "pages/forgetPassword/forgetPassword",
+			"style": {}
+		}, {
+			"path": "pages/forgetPasswordVercode/forgetPasswordVercode",
+			"style": {}
+		}, {
+			"path": "pages/setNewPassword/setNewPassword",
+			"style": {}
+		}, {
+			"path": "pages/fastLogin/fastLogin",
+			"style": {}
+		}, {
+			"path": "pages/fastLoginVercode/fastLoginVercode",
+			"style": {}
+		}, {
+			"path": "pages/fastLoginSetPassword/fastLoginSetPassword",
+			"style": {}
+		},
+		{
+			"path": "pages/data/data",
+			"style": {}
+		}, {
+			"path": "pages/history/history",
+			"style": {}
+		}, {
+			"path": "pages/userAgreement/userAgreement",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "用户协议",
+				"app-plus":{
+					"titleNView":{
+						"type":"default",
+						"titleText":"用户协议"
+					}
+				}
+			}
+		}, {
+			"path": "pages/privacyAgreement/privacyAgreement",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "隐私协议",
+				"app-plus":{
+					"titleNView":{
+						"type":"default",
+						"titleText":"隐私协议"
+					}
+				}
+			}
+		}, {
+			"path": "pages/modifyPassword/modifyPassword",
+			"style": {}
+		}, {
+			"path": "pages/modifyPasswordSetpassword/modifyPasswordSetpassword",
+			"style": {}
+		}, {
+			"path": "pages/modifyUserPhoneNum/modifyUserPhoneNum",
+			"style": {}
+		}, {
+			"path": "pages/modifyUserPhoneNumSetPhoneNum/modifyUserPhoneNumSetPhoneNum",
+			"style": {}
+		}, {
+			"path": "pages/systemIntroduce/systemIntroduce",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "系统介绍",
+				"app-plus":{
+					"titleNView":{
+						"type":"default",
+						"titleText":"系统介绍"
+					}
+				}
+			}
+		}, {
+			"path": "pages/companyIntroduce/companyIntroduce",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "公司简介",
+				"app-plus":{
+					"titleNView":{
+						"type":"default",
+						"titleText":"公司简介"
+					}
+				}
+			}
+		}, {
+			"path": "pages/setting/setting",
+			"style": {}
+		}
+
+		, {
+			"path": "pages/steady/steady",
+			"style": {}
+		}, {
+			"path": "pages/steadyDetails/steadyDetails",
+			"style": {}
+		}, {
+			"path": "pages/steadyIndex/steadyIndex",
+			"style": {}
+		}, {
+			"path": "pages/terminal/terminal",
+			"style": {}
+		}, {
+			"path": "pages/terminalDetails/terminalDetails",
+			"style": {}
+		}, {
+			"path": "pages/myApply/myApply",
+			"style": {}
+		}, {
+            "path" : "pages/setNewMessage/setNewMessage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/terminalHistory/terminalHistory",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/transientWave/transientWave",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/us/us",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/terminalStatusAll/terminalStatusAll",
+            "style" : {}
+        }
+    ],
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#3982FC",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/information/information",
+			"iconPath": "static/pic/information.png",
+			"selectedIconPath": "static/pic/information_click.png",
+			"text": "信息"
+		}, {
+			"pagePath": "pages/data/data",
+			"iconPath": "static/pic/data.png",
+			"selectedIconPath": "static/pic/data_click.png",
+			"text": "实时数据"
+		}, {
+			"pagePath": "pages/history/history",
+			"iconPath": "static/pic/history.png",
+			"selectedIconPath": "static/pic/history_click.png",
+			"text": "历史数据"
+		}, {
+			"pagePath": "pages/report/report",
+			"iconPath": "static/pic/report.png",
+			"selectedIconPath": "static/pic/report_click.png",
+			"text": "报表任务"
+		}, {
+			"pagePath": "pages/me/me",
+			"iconPath": "static/pic/me.png",
+			"selectedIconPath": "static/pic/me_click.png",
+			"text": "个人中心"
+		}]
+	},
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

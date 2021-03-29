@@ -1,0 +1,191 @@
+page{
+	background: #F0F0F0;
+}
+/* 主体开始 */
+.steadyDetails-block{
+	background:#F9F9F9;
+}
+/* 分割线 */
+.line{
+	background: #F0F0F0;
+	height: 20rpx;
+}
+.line-fine{
+	background: #F0F0F0;
+	height: 2rpx;
+}
+/* 时间开始 */
+.time-block{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background:rgba(255,255,255,1);
+	height: 94rpx;
+	padding: 0 40rpx;
+}
+.time-location{
+	font-size: 30rpx;
+	color: #000000;
+}
+.time-text{
+	color: #000000;
+	font-size: 30rpx;
+}
+/* 时间结束 */
+/* 基础信息开始 */
+.index-block{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	margin-top: 20rpx;
+}
+.index-title{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background: #FFFFFF;
+	height: 102rpx;
+}
+.index-title-left{
+	width: 6rpx;
+	height: 34rpx;
+	margin-left: 40rpx;
+}
+.index-title-right{
+	height: 42rpx;
+	font-size: 30rpx;
+	color: #000000;
+	margin-left: 20rpx;
+}
+.index-content{
+	margin-top: 20rpx;
+	background: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	/* height: 92rpx; */
+}
+.index-content1{
+	margin-top: 20rpx;
+	background: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 92rpx;
+}
+.index-content2{
+	margin-top: 20rpx;
+	background: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.index-content-text{
+	color: #303233;
+	font-size: 30rpx;
+	margin-left: 80rpx;
+	/* height: 82rpx; */
+}
+.index-content-text1{
+	color: #303233;
+	font-size: 30rpx;
+	margin-left: 80rpx;
+	height: 42rpx;
+	white-space: nowrap;
+}
+.index-content-text2{
+	color: #303233;
+	font-size: 30rpx;
+	margin:0 80rpx;
+}
+.index-content-pic{
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 30rpx;
+}
+/* 基础信息结束 */
+/* 重试页面开始 */
+.error-block{
+	height: 60%;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: absolute;
+	top: -10%;
+	margin-top: 300rpx;
+}
+.retry_button{
+	margin-top: 10rpx;
+	border-radius: 10%;
+}
+/* 重试页面结束 */
+/* 主体结束 */
+

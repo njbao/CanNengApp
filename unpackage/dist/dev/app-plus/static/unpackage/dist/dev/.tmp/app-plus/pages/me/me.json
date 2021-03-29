@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "personal-module": "/components/personalModule"
+  }
+}

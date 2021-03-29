@@ -1,0 +1,1 @@
+<view><back vue-id="35f45240-1" pageName="{{pageName}}" pageNameFlag="{{pageNameFlag}}" bind:__l="__l"></back><view class="error-block"><image class="us-pic" src="../../static/pic/aboutUs.png"></image><view class="us-text">灿能云 1.2.1</view></view></view>

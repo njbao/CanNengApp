@@ -1,0 +1,21 @@
+/* 主体开始 */
+.body-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.each-block{
+	height: 100rpx;
+	border-bottom: 1px solid #F0F0F0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40rpx;
+}
+.each-text{
+	color: #303233;
+	white-space: nowrap;
+	font-size: 30rpx;
+}
+/* 主体结束 */

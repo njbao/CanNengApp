@@ -1,0 +1,253 @@
+page{
+	background: #F0F0F0;
+}
+.title-padding{
+	height: var(--status-bar-height);
+	background: #FFFFFF 100%;
+}
+/* 主体开始 */
+.data-body{
+	background: #F0F0F0;
+	display: flex;
+	flex-direction: column;
+}
+/* 标题开始 */
+.data-title{
+	background: #FFFFFF 100%;
+	height: 88rpx;
+}
+.data-title-text{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 32rpx;
+	color: #171F24;
+	height: 88rpx;
+}
+/* 标题结束 */
+/* tab选项开始 */
+.data-tab{
+	height: 64rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	background: #FFFFFF 100%;
+	margin-top: 2rpx;
+	position: relative;
+}
+.tab-noread-num-transient{
+	width: 36rpx;
+	height: 36rpx;
+	background-image: url('../../static/pic/number.png');
+	background-size: 100% 100%;
+	font-size: 20rpx;
+	color: #FFFFFF;
+	text-align: center;
+	white-space: nowrap;
+	position: absolute;
+	left: 204rpx;
+	top: 10rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.tab-noread-num-steady{
+	width: 36rpx;
+	height: 36rpx;
+	background-image: url('../../static/pic/number.png');
+	background-size: 100% 100%;
+	font-size: 20rpx;
+	color: #FFFFFF;
+	text-align: center;
+	white-space: nowrap;
+	position: absolute;
+	left: 454rpx;
+	top: 10rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.tab-noread-num-terminal{
+	width: 36rpx;
+	height: 36rpx;
+	background-image: url('../../static/pic/number.png');
+	background-size: 100% 100%;
+	font-size:20rpx;
+	color: #FFFFFF;
+	text-align: center;
+	white-space: nowrap;
+	position: absolute;
+	left: 704rpx;
+	top: 10rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.tab{
+	height: 64rpx;
+	font-size: 28rpx;
+	color: #333333;
+	white-space: nowrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.tab-click{
+	font-size: 28rpx;
+	color: #3982FC;
+	white-space: nowrap;
+	border-bottom: solid 2rpx #3982FC;
+	height: 64rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+/* tab选项结束 */
+
+/* 暂态开始 */
+/* 下拉刷新开始 */
+.pull-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: #666666;
+	font-size: 24rpx;
+}
+/* 下拉刷新结束 */
+.transient-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.transient-event-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 20rpx;
+	background: #FFFFFF 100%;
+	position: relative;
+}
+.steady-event-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 20rpx;
+	background: #FFFFFF 100%;
+	position: relative;
+}
+.transient-event{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 260rpx;
+	align-items: center;
+}
+.steady-event{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 180rpx;
+	align-items: center;
+}
+.transient-event-time{
+	font-size: 24rpx;
+	color: #999999;
+	margin-left: 444rpx;
+	height: 34rpx;
+	margin-bottom: 12rpx;
+	white-space: nowrap;
+}
+.transient-event-pic{
+	width: 124rpx;
+	height: 200rpx;
+	margin-left: 40rpx;
+}
+.steady-event-pic{
+	width: 124rpx;
+	height: 124rpx;
+	margin-left: 40rpx;
+}
+.transient-event-noread{
+	position: absolute;
+	width: 20rpx;
+	height: 20rpx;
+	left: 154rpx;
+	top: 22rpx;
+}
+.transient-event-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 20rpx;
+	width: 566rpx;
+}
+.line-one{
+	width: 566rpx;
+	height: 120rpx;
+	font-size: 28rpx;
+	color: #000000;
+}
+.line-two{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline ;
+}
+.line-two-left{
+	width: 200rpx;
+	height: 38rpx;
+	background: #F4F4F4;
+	border-radius: 18rpx;
+	font-size: 24rpx;
+	color: #333333;
+	text-align: center;
+	white-space: nowrap;
+	/* display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center; */
+}
+.line-two-right{
+	font-size: 24rpx;
+	color: #333333;
+	margin-left: 16rpx;
+}
+.line-three{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline ;
+	margin-top: 21rpx;
+}
+.line-three-left{
+	width: 200rpx;
+	height: 38rpx;
+	background: #F4F4F4;
+	border-radius: 18rpx;
+	font-size: 24rpx;
+	color: #333333;
+	text-align: center;
+}
+.line-three-right{
+	font-size:24rpx;
+	color: #333333;
+	margin-left: 16rpx;
+}
+/* 暂态结束 */
+.no-data{
+	color: #FF5059;
+	/* background: #FFFFFF; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+/* 主体结束 */

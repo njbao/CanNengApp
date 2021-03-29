@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uni-calendar": "/components/uni-calendar/uni-calendar",
+    "back": "/components/back",
+    "mpvue-echarts": "/components/mpvue-echarts/src/echarts"
+  }
+}

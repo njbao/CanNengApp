@@ -1,0 +1,281 @@
+/* 主体开始 */
+.terminalDetails-block{
+	background: #F0F0F0;
+}
+/* 时间开始 */
+.time-block{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	background:rgba(255,255,255,1);
+	height: 94rpx;
+}
+.time-pic{
+	width: 44rpx;
+	height: 44rpx;
+	margin: 26rpx 0rpx 24rpx 40rpx;
+}
+.time-text{
+	color: #000000;
+	font-size: 30rpx;
+	margin:26rpx 0 26rpx 20rpx;
+}
+/* 时间结束 */
+/* 基础信息开始 */
+.basic-block{
+	height: 176rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	margin-top: 20rpx;
+	background:rgba(255,255,255,1);
+}
+.basic-body{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	padding-left: 40rpx;
+	padding-right: 40rpx;
+}
+.basic-title{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	height: 42rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-top: 30rpx;
+}
+.basic-title-left{
+	width: 6rpx;
+	height: 34rpx;
+}
+.basic-title-right{
+	color: #000000;
+	font-size: 30rpx;
+	margin-left: 14rpx;
+	font-weight:500;
+}
+.basic-content{
+	height: 106rpx;
+	font-size: 26rpx;
+	color: #000000;
+	margin-top:20rpx ;
+}
+/* 基础信息结束 */
+/* 终端通讯信息开始 */
+.eigenvalues-block{
+	height: 350rpx;
+	margin-top: 20rpx;
+	background:rgba(255,255,255,1);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+}
+.eigenvalues-title{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-top: 30rpx;
+	height: 42rpx;
+}
+.eigenvalues-title-left{
+	margin-left: 40rpx;
+	width: 6rpx;
+	height: 34rpx;
+}
+.eigenvalues-title-right{
+	font-size: 30rpx;
+	color: #000000;
+	font-weight:500;
+	margin-left: 14rpx;
+}
+.eigenvalues-content{
+	width: 670rpx;
+	height: 188rpx;
+	margin: 20rpx 40rpx 50rpx 40rpx;
+}
+.eigenvalues-content-title{
+	font-size: 26rpx;
+	color: #333333;
+}
+.eigenvalues-content-scroll{
+	height: 160rpx;
+}
+.eigenvalues-content-text{
+	font-size: 26rpx;
+	color: #333333;
+}
+/* 终端通讯信息结束 */
+/* 终端告警信息开始 */
+.waveform-block{
+	height: 300rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin-top: 20rpx;
+	background:rgba(255,255,255,1);
+}
+.waveform-title{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-top: 30rpx;
+	height: 42rpx;
+}
+.waveform-title-left{
+	margin-left: 40rpx;
+	width: 6rpx;
+	height: 34rpx;
+}
+.waveform-title-right{
+	font-size: 30rpx;
+	color: #000000;
+	font-weight:500;
+	margin-left: 14rpx;
+}
+.waveform-content-scroll{
+	height: 160rpx;
+	width: 670rpx;
+	font-size: 26rpx;
+	color: #333333;
+	margin: 20rpx 40rpx 0 40rpx;
+}
+/* 终端告警信息结束 */
+/* 终端流量信息开始 */
+.flow-block{
+	height: 262rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin-top: 20rpx;
+	background:rgba(255,255,255,1);
+}
+.flow-title{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-top: 30rpx;
+	height: 42rpx;
+}
+.flow-title-left{
+	margin-left: 40rpx;
+	width: 6rpx;
+	height: 34rpx;
+}
+.flow-title-right{
+	font-size: 30rpx;
+	color: #000000;
+	font-weight:500;
+	margin-left: 14rpx;
+}
+.flow-content{
+	height: 160rpx;
+	width: 670rpx;
+	font-size: 26rpx;
+	color: #333333;
+	margin: 20rpx 40rpx 0 40rpx;
+}
+/* 终端流量信息结束 */
+/* 重试页面开始 */
+.error-block{
+	height: 60%;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: absolute;
+	top: -10%;
+	margin-top: 300rpx;
+}
+.retry_button{
+	margin-top: 10rpx;
+	border-radius: 10%;
+}
+/* 重试页面结束 */
+/* 主体结束 */
+

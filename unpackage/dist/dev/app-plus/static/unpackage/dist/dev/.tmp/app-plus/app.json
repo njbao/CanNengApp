@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/report/report",
+    "pages/login/login",
+    "pages/information/information",
+    "pages/me/me",
+    "pages/levelUp/levelUp",
+    "pages/transientDetails/transientDetails",
+    "pages/preview/preview",
+    "pages/vercode/vercode",
+    "pages/index/index",
+    "pages/forgetPassword/forgetPassword",
+    "pages/forgetPasswordVercode/forgetPasswordVercode",
+    "pages/setNewPassword/setNewPassword",
+    "pages/fastLogin/fastLogin",
+    "pages/fastLoginVercode/fastLoginVercode",
+    "pages/fastLoginSetPassword/fastLoginSetPassword",
+    "pages/data/data",
+    "pages/history/history",
+    "pages/userAgreement/userAgreement",
+    "pages/privacyAgreement/privacyAgreement",
+    "pages/modifyPassword/modifyPassword",
+    "pages/modifyPasswordSetpassword/modifyPasswordSetpassword",
+    "pages/modifyUserPhoneNum/modifyUserPhoneNum",
+    "pages/modifyUserPhoneNumSetPhoneNum/modifyUserPhoneNumSetPhoneNum",
+    "pages/systemIntroduce/systemIntroduce",
+    "pages/companyIntroduce/companyIntroduce",
+    "pages/setting/setting",
+    "pages/steady/steady",
+    "pages/steadyDetails/steadyDetails",
+    "pages/steadyIndex/steadyIndex",
+    "pages/terminal/terminal",
+    "pages/terminalDetails/terminalDetails",
+    "pages/myApply/myApply",
+    "pages/chooseLine/chooseLine"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#3982FC",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/information/information",
+        "iconPath": "static/pic/information.png",
+        "selectedIconPath": "static/pic/information_click.png",
+        "text": "信息"
+      },
+      {
+        "pagePath": "pages/data/data",
+        "iconPath": "static/pic/data.png",
+        "selectedIconPath": "static/pic/data_click.png",
+        "text": "实时数据"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "iconPath": "static/pic/history.png",
+        "selectedIconPath": "static/pic/history_click.png",
+        "text": "历史数据"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "iconPath": "static/pic/report.png",
+        "selectedIconPath": "static/pic/report_click.png",
+        "text": "报表任务"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/pic/me.png",
+        "selectedIconPath": "static/pic/me_click.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "灿能云",
+  "compilerVersion": "2.3.7",
+  "usingComponents": {}
+}
