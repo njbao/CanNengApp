@@ -19,7 +19,7 @@
 		                <view data-val=""  class="button-item-delete"></view>
 		                <button data-val="0" @click="bindKeyEvent(0)" class="button-item">0</button>
 		                <view data-val="delete" @click="bindKeyEvent('delete')" class="button-item-delete">
-							<image src="../../static/pic/delete.png" class="delete"></image>
+							<image src="../static/pic/delete.png" class="delete"></image>
 						</view>
 		            </view>
 	</view>

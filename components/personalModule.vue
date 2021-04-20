@@ -4,7 +4,7 @@
 		<view class="name-block">
 			{{name}}
 		</view>
-		<image src="../../static/pic/jump.png" class="jumpTo"></image>
+		<image src="../static/pic/jump.png" class="jumpTo"></image>
 	</view>
 </template>
 

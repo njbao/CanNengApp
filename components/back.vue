@@ -7,7 +7,7 @@
 		<view class="back-block" v-if="backShowFlag">
 			<view @click="backTo" class="backTo-block">
 				<view class="back-view">
-					<image class="back" src="../../static/pic/back.png"></image>
+					<image class="back" src="../static/pic/back.png"></image>
 				</view>
 				<view class="back-text">返回</view>
 			</view>
