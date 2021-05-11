@@ -626,7 +626,7 @@
 									that.terminalList = that.terminalList.concat(list);
 								}
 								if(that.terminalList.length==0){
-									that.noTerminal='暂无终端越限消息'
+									that.noTerminal='暂无终端状态信息'
 								}
 							}else{
 								uni.showModal({

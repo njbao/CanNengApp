@@ -36,7 +36,7 @@
 				<view class="data-first-bottom">
 					<view class="data-first-bottom-line-one">
 						<view class="data-first-bottom-title">
-							所属供电公司：
+							所&nbsp;&nbsp;属&nbsp;&nbsp;区&nbsp;&nbsp;域：
 						</view>
 						<view class="data-first-bottom-line-one-right">
 							{{basicInfo.gdName}}
@@ -44,7 +44,7 @@
 					</view>
 					<view class="data-first-bottom-line-two">
 						<view class="data-first-bottom-title">
-							所属供变电站：
+							所&nbsp;&nbsp;属&nbsp;&nbsp;单&nbsp;&nbsp;位：
 						</view>
 						<view class="data-first-bottom-line-two-right">
 							{{basicInfo.subName}}
@@ -58,7 +58,7 @@
 							正常
 						</view>
 						<view class="data-first-bottom-line-three-false" v-else>
-							异常
+							中断
 						</view>
 					</view>
 					<view class="data-first-bottom-line-four">
@@ -105,238 +105,243 @@
 					{{refreshText}}
 				</view>
 			</view>
-			<scroll-view scroll-y="true" :style="{height:scrollHeight}" v-if="basicInfo.state==1&&basicInfo.flow!=-1">
-				<view class="data-second-block">
-					<view class="data-second-block-pic">
-						<view class="data-second-block-pic-left">
-							<view class="data-second-block-pic-left-first">
-								<image :animation="animationDataKVA" src="../../static/pic/pointerKVA.png" class="pointer-left"></image>
-								<view class="minKVA">
-									{{minKVA}}
+			<view class="" v-if="doneQuery == 1">
+				<scroll-view scroll-y="true" :style="{height:scrollHeight}" v-if="basicInfo.state==1&&basicInfo.flow!=-1">
+					<view class="data-second-block">
+						<view class="data-second-block-pic">
+							<view class="data-second-block-pic-left">
+								<view class="data-second-block-pic-left-first">
+									<image :animation="animationDataKVA" src="../../static/pic/pointerKVA.png" class="pointer-left"></image>
+									<view class="minKVA">
+										{{minKVA}}
+									</view>
+									<view class="maxKVA">
+										{{maxKVA}}
+									</view>
 								</view>
-								<view class="maxKVA">
-									{{maxKVA}}
+								<view class="data-second-block-pic-left-second">
+									<image :animation="animationDataKVB" src="../../static/pic/pointerKVB.png" class="pointer-left"></image>
+									<view class="minKVB">
+										{{minKVB}}
+									</view>
+									<view class="maxKVB">
+										{{maxKVB}}
+									</view>
 								</view>
-							</view>
-							<view class="data-second-block-pic-left-second">
-								<image :animation="animationDataKVB" src="../../static/pic/pointerKVB.png" class="pointer-left"></image>
-								<view class="minKVB">
-									{{minKVB}}
+								<view class="data-second-block-pic-left-third">
+									<image :animation="animationDataKVC" src="../../static/pic/pointerKVC.png" class="pointer-left"></image>
+									<view class="minKVC">
+										{{minKVC}}
+									</view>
+									<view class="maxKVC">
+										{{maxKVC}}
+									</view>
 								</view>
-								<view class="maxKVB">
-									{{maxKVB}}
-								</view>
-							</view>
-							<view class="data-second-block-pic-left-third">
-								<image :animation="animationDataKVC" src="../../static/pic/pointerKVC.png" class="pointer-left"></image>
-								<view class="minKVC">
-									{{minKVC}}
-								</view>
-								<view class="maxKVC">
-									{{maxKVC}}
-								</view>
-							</view>
-							<view class="data-second-block-pic-left-text">
-								电压有效值
-							</view>
-						</view>
-						<!-- 外电压内电流 -->
-						<view class="data-second-block-pic-center">
-							<view class="data-second-block-pic-center-pic">
-								<image :animation="animationDataCurrentA" src="../../static/pic/pointer1.png" class="current" :style="{width:currentAWidth}"></image>
-								<image :animation="animationDataCurrentB" src="../../static/pic/pointer2.png" class="current" :style="{width:currentBWidth}"></image>
-								<image :animation="animationDataCurrentC" src="../../static/pic/pointer3.png" class="current" :style="{width:currentCWidth}"></image>
-								<image :animation="animationDataVoltageA" src="../../static/pic/pointer1.png" class="voltage" :style="{width:voltageAWidth}"></image>
-								<image :animation="animationDataVoltageB" src="../../static/pic/pointer2.png" class="voltage" :style="{width:voltageBWidth}"></image>
-								<image :animation="animationDataVoltageC" src="../../static/pic/pointer3.png" class="voltage" :style="{width:voltageCWidth}"></image>
-							</view>
-							<view class="data-second-block-pic-center-text">
-								基波电压/电流幅值（相位）
-							</view>
-						</view>
-						<view class="data-second-block-pic-right">
-							<view class="data-second-block-pic-right-first">
-								<image :animation="animationDataAA" src="../../static/pic/pointerAA.png" class="pointer-right"></image>
-								<view class="minAA">
-									{{minAA}}
-								</view>
-								<view class="maxAA">
-									{{maxAA}}
+								<view class="data-second-block-pic-left-text">
+									电压有效值
 								</view>
 							</view>
-							<view class="data-second-block-pic-right-second">
-								<image :animation="animationDataAB" src="../../static/pic/pointerAB.png" class="pointer-right"></image>
-								<view class="minAB">
-									{{minAB}}
+							<!-- 外电压内电流 -->
+							<view class="data-second-block-pic-center">
+								<view class="data-second-block-pic-center-pic">
+									<image :animation="animationDataCurrentA" src="../../static/pic/pointer1.png" class="current" :style="{width:currentAWidth}"></image>
+									<image :animation="animationDataCurrentB" src="../../static/pic/pointer2.png" class="current" :style="{width:currentBWidth}"></image>
+									<image :animation="animationDataCurrentC" src="../../static/pic/pointer3.png" class="current" :style="{width:currentCWidth}"></image>
+									<image :animation="animationDataVoltageA" src="../../static/pic/pointer1.png" class="voltage" :style="{width:voltageAWidth}"></image>
+									<image :animation="animationDataVoltageB" src="../../static/pic/pointer2.png" class="voltage" :style="{width:voltageBWidth}"></image>
+									<image :animation="animationDataVoltageC" src="../../static/pic/pointer3.png" class="voltage" :style="{width:voltageCWidth}"></image>
 								</view>
-								<view class="maxAB">
-									{{maxAB}}
-								</view>
-							</view>
-							<view class="data-second-block-pic-right-third">
-								<image :animation="animationDataAC" src="../../static/pic/pointerAC.png" class="pointer-right"></image>
-								<view class="minAC">
-									{{minAC}}
-								</view>
-								<view class="maxAC">
-									{{maxAC}}
+								<view class="data-second-block-pic-center-text">
+									基波电压/电流幅值（相位）
 								</view>
 							</view>
-							<view class="data-second-block-pic-right-text">
-								电流有效值
+							<view class="data-second-block-pic-right">
+								<view class="data-second-block-pic-right-first">
+									<image :animation="animationDataAA" src="../../static/pic/pointerAA.png" class="pointer-right"></image>
+									<view class="minAA">
+										{{minAA}}
+									</view>
+									<view class="maxAA">
+										{{maxAA}}
+									</view>
+								</view>
+								<view class="data-second-block-pic-right-second">
+									<image :animation="animationDataAB" src="../../static/pic/pointerAB.png" class="pointer-right"></image>
+									<view class="minAB">
+										{{minAB}}
+									</view>
+									<view class="maxAB">
+										{{maxAB}}
+									</view>
+								</view>
+								<view class="data-second-block-pic-right-third">
+									<image :animation="animationDataAC" src="../../static/pic/pointerAC.png" class="pointer-right"></image>
+									<view class="minAC">
+										{{minAC}}
+									</view>
+									<view class="maxAC">
+										{{maxAC}}
+									</view>
+								</view>
+								<view class="data-second-block-pic-right-text">
+									电流有效值
+								</view>
 							</view>
 						</view>
 					</view>
+					<!-- 具体数据 -->
+					<view class="data-third-block">
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-B">
+									{{firstName}}
+								</view>
+								<view class="data-third-block-line-right-B">
+									{{secondName}}
+								</view>
+								<view class="data-third-block-line-right-B">
+									{{thirdName}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								电压有效值(kV)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.rmsVA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.rmsVB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.rmsVC}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								电流有效值(A)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.rmsIA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.rmsIB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.rmsIC}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								基波电压幅值(kV)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWaveVA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWaveVB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.baseWaveVC}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								基波电压相位(°)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWavePhaseVA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWavePhaseVB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.baseWavePhaseVC}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								基波电流幅值(A)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWaveIA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWaveIB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.baseWaveIC}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								基波电流相位(°)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWavePhaseIA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.baseWavePhaseIB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.baseWavePhaseIC}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								电压偏差(%)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.vudevA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.vudevB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.vudevC}}
+								</view>
+							</view>
+						</view>
+						<view class="data-third-block-line">
+							<view class="data-third-block-line-left">
+								电压总畸变率(%)
+							</view>
+							<view class="data-third-block-line-right">
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.thdVA}}
+								</view>
+								<view class="data-third-block-line-right-A">
+									 {{constantlyInfo.thdVB}}
+								</view>
+								<view class="data-third-block-line-right-A" v-if="thirdName">
+									 {{constantlyInfo.thdVC}}
+								</view>
+							</view>
+						</view>
+					</view>
+				</scroll-view>
+				<view class="no-data" :style="{height:scrollHeight}" v-else>
+					暂无实时数据
 				</view>
-				<!-- 具体数据 -->
-				<view class="data-third-block">
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-B">
-								{{firstName}}
-							</view>
-							<view class="data-third-block-line-right-B">
-								{{secondName}}
-							</view>
-							<view class="data-third-block-line-right-B">
-								{{thirdName}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							电压有效值(kV)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.rmsVA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.rmsVB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.rmsVC}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							电流有效值(A)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.rmsIA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.rmsIB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.rmsIC}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							基波电压幅值(kV)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWaveVA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWaveVB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.baseWaveVC}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							基波电压相位(°)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWavePhaseVA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWavePhaseVB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.baseWavePhaseVC}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							基波电流幅值(A)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWaveIA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWaveIB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.baseWaveIC}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							基波电流相位(°)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWavePhaseIA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.baseWavePhaseIB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.baseWavePhaseIC}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							电压偏差(%)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.vudevA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.vudevB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.vudevC}}
-							</view>
-						</view>
-					</view>
-					<view class="data-third-block-line">
-						<view class="data-third-block-line-left">
-							电压总畸变率(%)
-						</view>
-						<view class="data-third-block-line-right">
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.thdVA}}
-							</view>
-							<view class="data-third-block-line-right-A">
-								 {{constantlyInfo.thdVB}}
-							</view>
-							<view class="data-third-block-line-right-A" v-if="thirdName">
-								 {{constantlyInfo.thdVC}}
-							</view>
-						</view>
-					</view>
-				</view>
-			</scroll-view>
-			<view class="no-data" :style="{height:scrollHeight}" v-else>
-				暂无实时数据
+			</view>
+			<view class="data-second-block" v-else>
+				
 			</view>
 		</view>
 	</view>
@@ -397,7 +402,8 @@
 				showTime:'',
 				intervalID:'done',
 				allDevCount:0,
-				errDevCount:0
+				errDevCount:0,
+				doneQuery:0
 			}
 		},
 		methods: {
@@ -415,7 +421,7 @@
 				uni.navigateTo({
 					url:'../chooseLine/chooseLine'
 				});
-				uni.$on('lineInfoSelect',function(data){
+				uni.$once('lineInfoSelect',function(data){
 					if(that.intervalID!='done'){
 						clearInterval(that.intervalID);
 						that.intervalID = 'done';
@@ -427,7 +433,7 @@
 					that.queryBasicInfo();
 					that.queryConstantlyInfo();
 				});
-				uni.$on('lineInfoQuery',function(data){
+				uni.$once('lineInfoQuery',function(data){
 					if(that.intervalID!='done'){
 						clearInterval(that.intervalID);
 						that.intervalID = 'done';
@@ -511,6 +517,7 @@
 										that.queryConstantlyInfo();
 									}
 							}else{
+								uni.hideLoading()
 								uni.showModal({
 								    title: '提示',
 								    content: '查询默认监测点失败，请重试',
@@ -526,6 +533,7 @@
 							}
 					    },
 						fail() {
+							uni.hideLoading()
 							uni.showModal({
 							    title: '提示',
 							    content: '网络或服务器异常，请稍后再试',
@@ -575,6 +583,7 @@
 									break;
 							}
 						}else{
+							uni.hideLoading()
 							uni.showModal({
 							    title: '提示',
 							    content: '查询基础信息失败，请重试',
@@ -590,6 +599,7 @@
 						}
 				    },
 					fail() {
+						uni.hideLoading()
 						uni.showModal({
 						    title: '提示',
 						    content: '网络或服务器异常，请稍后再试',
@@ -607,6 +617,10 @@
 			},
 			queryConstantlyInfo(){
 				var that=this;
+				uni.showLoading({
+					mask:true,
+					title:'加载中...'
+				})
 				uni.request({
 				    url: that.serverUrl+'/realtimeinfo/getRealData', 
 					method:'POST',
@@ -618,6 +632,8 @@
 				    },
 					sslVerify:false,
 				    success: (res) => {
+						uni.hideLoading()
+						that.doneQuery = 1
 						if(res.data.resultCode=='10000'){
 							var result= res.data.data;
 							that.constantlyInfo = result;
@@ -654,6 +670,7 @@
 						}
 				    },
 					fail() {
+						uni.hideLoading()
 						uni.showModal({
 						    title: '提示',
 						    content: '网络或服务器异常，请稍后再试',
@@ -1047,6 +1064,7 @@
 		onLoad() {
 			var that =this;
 			that.scrollH();
+			
 			that.queryDefaultLine();
 			// console.log(uni.getStorageSync('userInfo').userId)
 		},

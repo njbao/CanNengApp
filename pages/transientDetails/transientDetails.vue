@@ -99,7 +99,7 @@
 							{{backNumber}}
 						</view>
 					</view>
-					<view class="eigenvalues-content-line3-right2" v-if="sagReason!=null&&sagReason!=''&&sagReason!=undefind">
+					<view class="eigenvalues-content-line3-right2" v-if="sagReason">
 						<view class="eigenvalues-content-line3-right2-left">
 							暂降原因：
 						</view>

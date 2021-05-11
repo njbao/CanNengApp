@@ -18,7 +18,7 @@
 			</view>
 			<scroll-view scroll-y="true" :style="{height:scrollHeight}">
 				<!-- 指标类型 -->
-				<view class="index-block" v-if="statisticsDetail.eventInfo.length>0">
+				<view class="index-block" v-if="statisticsDetail.eventInfo&&statisticsDetail.eventInfo.length>0">
 					<view class="index-title">
 						<image src="../../static/pic/rectangle.png" class="index-title-left"></image>
 						<view class="index-title-right">

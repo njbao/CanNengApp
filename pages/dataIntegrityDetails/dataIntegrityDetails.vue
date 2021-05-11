@@ -35,7 +35,8 @@
 				</view> 
 			</view>
 			<view class="canvasView" :style="{height:picHeight}">
-				<mpvue-echarts class="ec-canvas"  canvasId="line" ref="lineChart" :style="{height:picHeight}"/>
+				<!-- <mpvue-echarts class="ec-canvas"  canvasId="line" ref="lineChart" :style="{height:picHeight}"/>-->
+				 <echarts :option="option" class="ec-canvas" :style="{height:picHeight}"/>
 			</view>
 		</scroll-view>
 		</block>
@@ -56,9 +57,9 @@
 <script>
 	import back from '../../components/back.vue';
 	import uniCalendar from "../../components/uni-calendar/uni-calendar";
-	import * as echarts from '@/components/echarts/echarts.simple.min.js';
-	import mpvueEcharts from '@/components/mpvue-echarts/src/echarts.vue';
-	
+	// import * as echarts from '@/components/echarts/echarts.simple.min.js';
+	// import mpvueEcharts from '@/components/mpvue-echarts/src/echarts.vue';
+	import echarts from '../../components/myEcharts/echarts.vue'
 	export default {
 		data() {
 			return {
@@ -122,7 +123,16 @@
 									list1.push(dataIntegrity[i].lineName);
 									list2.push(dataIntegrity[i].integrity)
 								}
-								that.drawPic(list1,list2)
+								var sys = uni.getSystemInfoSync();
+								var winWidth = sys.windowWidth;
+								var winHeight = sys.windowHeight;
+								var winrate = 750 / winWidth;
+								var statusBarHeight = sys.statusBarHeight;
+								// var picHeight = parseInt((winHeight - statusBarHeight) * winrate - 400)/winrate;
+								that.srollHeight = parseInt((winHeight - statusBarHeight) * winrate - 300)+ 'rpx';
+								var picHeight=list1.length*50+50
+								that.picHeight =picHeight*winrate+'rpx'
+								that.drawPic(list1,list2) 
 							}else{
 								uni.hideLoading()
 								that.errorFlag=1
@@ -138,7 +148,7 @@
 			drawPic(list1,list2) {
 				var that = this ;
 				var w = '55%';
-				var l = '30%';
+				var l = '35%';
 				that.option={
 					grid:{
 						// width:'55%',
@@ -163,7 +173,7 @@
 						data: list1,
 						axisLabel:{
 							interval:0,  
-							fontsize:6,
+							fontsize:3,
 							formatter:function(value){
 								if(value.length>9){
 									return value.substring(0,8)+'...'
@@ -184,6 +194,7 @@
 									position:'right'
 								}
 							},
+							// data:[100],
 							data:list2,
 							itemStyle:{
 								color:'#58C1FF',
@@ -192,25 +203,17 @@
 							barWidth:'90%',
 						}
 				}
-				var sys = uni.getSystemInfoSync();
-				var winWidth = sys.windowWidth;
-				var winHeight = sys.windowHeight;
-				var winrate = 750 / winWidth;
-				var statusBarHeight = sys.statusBarHeight;
-				// var picHeight = parseInt((winHeight - statusBarHeight) * winrate - 400)/winrate;
-				that.srollHeight = parseInt((winHeight - statusBarHeight) * winrate - 300)+ 'rpx';
-				var picHeight=list1.length*50+50
-				that.picHeight =picHeight*winrate+'rpx'
+				
 				// that.picHeight = parseInt((winHeight - statusBarHeight) * winrate - 400)+ 'rpx';
-				let canvas = that.$refs.lineChart.canvas
-				echarts.setCanvasCreator(() => canvas);
-				let lineChart = echarts.init(canvas, null, {
-					width: winWidth,
-					height: picHeight
-				})
-				canvas.setChart(lineChart)
-				lineChart.setOption(that.option)
-				that.$refs.lineChart.setChart(lineChart)
+				// let canvas = that.$refs.lineChart.canvas
+				// echarts.setCanvasCreator(() => canvas);
+				// let lineChart = echarts.init(canvas, null, {
+				// 	width: winWidth,
+				// 	height: picHeight
+				// })
+				// canvas.setChart(lineChart)
+				// lineChart.setOption(that.option)
+				// that.$refs.lineChart.setChart(lineChart)
 			},
 			retry(){
 				this.getDataIntegrity();
@@ -220,18 +223,19 @@
 			var that=this;
 			// that.endDate=that.formatTime(new Date());
 			// that.startDate=that.endDate.substring(0,8)+'01';
+			that.getDataIntegrity();
 			uni.showLoading({
 				mask:true
 			})
 		},
 		onReady(){
 			var that=this;
-			that.getDataIntegrity();
 		},
 		components:{
 			back,
 			uniCalendar,
-			mpvueEcharts
+			// mpvueEcharts
+			echarts
 		}
 	}
 </script>

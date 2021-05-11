@@ -42,7 +42,8 @@
 					</view>
 				</view>
 				<view class="canvasView" :style="{height:picHeight}">
-					<mpvue-echarts class="ec-canvas" canvasId="line" ref="lineChart" :style="{height:picHeight}"/>
+					<!-- <mpvue-echarts class="ec-canvas" canvasId="line" ref="lineChart" :style="{height:picHeight}"/> -->
+					<echarts class="ec-canvas" :option="option" :style="{height:picHeight}"/>
 				</view>
 				<view class="pic-block-title">
 					<image class="pic-block-title-left" src="../../static/pic/rectangle.png"></image>
@@ -80,8 +81,9 @@
 <script>
 	import back from '../../components/back.vue';
 	import uniCalendar from "../../components/uni-calendar/uni-calendar";
-	import * as echarts from '@/components/echarts/echarts.simple.min.js';
-	import mpvueEcharts from '@/components/mpvue-echarts/src/echarts.vue';
+	import echarts from '../../components/myEcharts/echarts.vue'
+	// import * as echarts from '@/components/echarts/echarts.simple.min.js';
+	// import mpvueEcharts from '@/components/mpvue-echarts/src/echarts.vue';
 	export default {
 		data() {
 			return {
@@ -120,7 +122,6 @@
 			},
 			getDevStatus(){
 				var that=this;
-				
 				if(that.judgeLogin()){
 					uni.request({
 					    url: that.serverUrl+'/dataIntegrity/getDevStatus', 
@@ -149,7 +150,19 @@
 									list1.push(devStatus[i].devName);
 									list2.push(devStatus[i].onlineRate)
 								}
-								that.drawPic(list1,list2)
+								var sys = uni.getSystemInfoSync();
+								var winWidth = sys.windowWidth;
+								var winHeight = sys.windowHeight;
+								var winrate = 750 / winWidth;
+								var statusBarHeight = sys.statusBarHeight;
+								// var picHeight = parseInt((winHeight - statusBarHeight) * winrate - 300)/winrate;
+								var picHeight=list1.length*50+50
+								// var picHeight=9*50+50
+								that.srollHeight = parseInt((winHeight - statusBarHeight) * winrate - 300)+ 'rpx';
+								that.picHeight =picHeight*winrate+'rpx';
+								that.$nextTick(function(){
+									that.drawPic(list1,list2)
+								})
 							}else{
 								uni.hideLoading()
 								that.errorFlag=1
@@ -176,78 +189,68 @@
 			},
 			drawPic(list1,list2) {
 				var that = this ;
-				that.option={
-					grid:{
-						width:'55%',
-						left:'35%'
-					},
-					xAxis: {
-						name: '在线率(%)',
-						type: 'value',
-						nameGap:30,
-						nameLocation:'center',
-						// data:[0,20,40,50,60,80,100],
-						max:100,
-						axisLabel: {
-							margin:10
-						}
-					},
-					yAxis: {
-						type: 'category',
-						inverse: true,
-						name:'监测点名称',
-						nameLocation:'start',
-						data:list1,
-						// data:['伟哥伟哥伟哥伟哥伟哥5伟哥6伟哥7伟哥8','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6伟哥7','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6','伟哥1伟哥2伟哥3伟哥4伟哥5','伟哥1伟哥2伟哥3伟哥4','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6伟哥7','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6','伟哥1伟哥2伟哥3伟哥4伟哥5','伟哥1伟哥2伟哥3伟哥4'],
-						axisLabel:{
-							interval:0,  
-							fontsize:3,
-							formatter:function(value){
-								if(value.length>9){
-									return value.substring(0,8)+'...'
-								}else{
-									return value
+					that.option={
+						grid:{
+							width:'55%',
+							left:'35%',
+						},
+						xAxis: {
+							name: '在线率(%)',
+							type: 'value',
+							nameGap:30,
+							nameLocation:'center',
+							// data:[0,20,40,50,60,80,100],
+							max:100,
+							axisLabel: {
+								margin:10
+							}
+						},
+						yAxis: {
+							type: 'category',
+							inverse: true,
+							name:'监测点名称',
+							nameLocation:'start',
+							data:list1,
+							// data:['伟哥伟哥伟哥伟哥伟哥5伟哥6伟哥7伟哥8','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6伟哥7','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6','伟哥1伟哥2伟哥3伟哥4伟哥5','伟哥1伟哥2伟哥3伟哥4','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6伟哥7','伟哥1伟哥2伟哥3伟哥4伟哥5伟哥6','伟哥1伟哥2伟哥3伟哥4伟哥5','伟哥1伟哥2伟哥3伟哥4'],
+							axisLabel:{
+								interval:0,  
+								fontsize:3,
+								formatter:function(value){
+									if(value.length>9){
+										return value.substring(0,8)+'...'
+									}else{
+										return value
+									}
 								}
 							}
-						}
-					},
-					series: {
-							type: 'bar',
-							label: {
-								normal: {
-									show: true,
-									position:'right'
-								}
-							},
-							// data: [100,100,100,100,100,100,100,100,100],
-							data: list2,
-							itemStyle:{
-								color:'#58C1FF',
-								position:'top'
-							},
-							barWidth:'90%',
-						}
-				}
-				var sys = uni.getSystemInfoSync();
-				var winWidth = sys.windowWidth;
-				var winHeight = sys.windowHeight;
-				var winrate = 750 / winWidth;
-				var statusBarHeight = sys.statusBarHeight;
-				// var picHeight = parseInt((winHeight - statusBarHeight) * winrate - 300)/winrate;
-				var picHeight=list1.length*50+50
-				// var picHeight=9*50+50
-				that.srollHeight = parseInt((winHeight - statusBarHeight) * winrate - 300)+ 'rpx';
-				that.picHeight =picHeight*winrate+'rpx'
-				let canvas = that.$refs.lineChart.canvas
-				echarts.setCanvasCreator(() => canvas);
-				let lineChart = echarts.init(canvas, null, {
-					width: winWidth,
-					height: picHeight,
-				})
-				canvas.setChart(lineChart)
-				lineChart.setOption(that.option)
-				that.$refs.lineChart.setChart(lineChart)
-				uni.hideLoading()
+						},
+						series: {
+								type: 'bar',
+								label: {
+									normal: {
+										show: true,
+										position:'right'
+									}
+								},
+								// data: [100,100,100,100,100,100,100,100,100],
+								data: list2,
+								itemStyle:{
+									color:'#58C1FF',
+									position:'top'
+								},
+								barWidth:'90%',
+							}
+					}
+				// let canvas = that.$refs.lineChart.canvas
+				// echarts.setCanvasCreator(() => canvas);
+				// let lineChart = echarts.init(canvas, null, {
+				// 	width: winWidth,
+				// 	height: picHeight,
+				// })
+				// canvas.setChart(lineChart)
+				// lineChart.setOption(that.option)
+				// that.$refs.lineChart.setChart(lineChart)
+				// uni.hideLoading()
 			},
 			retry(){
 				this.getDevStatus();
@@ -258,17 +261,17 @@
 			uni.showLoading({
 				mask:true
 			})
+			that.getDevStatus();
 			// that.endDate=that.formatTime(new Date());
 			// that.startDate=that.endDate.substring(0,8)+'01';
 		},
 		onReady() {
 			var that=this;
-			that.getDevStatus();
 		},
 		components:{
 			back,
 			uniCalendar,
-			mpvueEcharts
+			echarts
 		}
 	}
 </script>

@@ -23,7 +23,8 @@
 				<swiper-item>
 					<view class="echarts-block" :style="{height:scrollHeight}">
 						<view class="canvasView" :style="{height:picHeight}">
-							<mpvue-echarts class="ec-canvas" canvasId="line" ref="lineChart" :style="{height:picHeight}"/>
+							<!-- <mpvue-echarts class="ec-canvas" canvasId="line" ref="lineChart" :style="{height:picHeight}"/> -->
+							<echarts :option="option1" class="ec-canvas" :style="{height:picHeight}"></echarts>
 						</view>
 						<view class="legend-block">
 							<view class="legend-block-left">
@@ -48,7 +49,8 @@
 				<swiper-item>
 					<view class="echarts-block" :style="{height:scrollHeight}">
 						<view class="canvasView" :style="{height:picHeight}">
-							<mpvue-echarts class="ec-canvas" canvasId="line2" ref="lineChart2" :style="{height:picHeight}"/>
+							<!-- <mpvue-echarts class="ec-canvas" canvasId="line2" ref="lineChart2" :style="{height:picHeight}"/> -->
+							<echarts :option="option2" class="ec-canvas" :style="{height:picHeight}"></echarts>
 						</view>
 						<view class="legend-block">
 							<view class="legend-block-left">
@@ -56,7 +58,7 @@
 									
 								</view>
 								<view class="legend-block-left-text">
-									国际限值(%)
+									国际限值(A)
 								</view>
 							</view>
 							<view class="legend-block-right">
@@ -78,8 +80,9 @@
 
 <script>
 	import back from '../../components/back.vue';
-	import * as echarts from '@/components/echarts/echarts.simple.min.js';
-	import mpvueEcharts from '@/components/mpvue-echarts/src/echarts.vue';
+	import echarts from '../../components/myEcharts/echarts.vue'
+	// import * as echarts from '@/components/echarts/echarts.simple.min.js';
+	// import mpvueEcharts from '@/components/mpvue-echarts/src/echarts.vue';
 	export default {
 		data() {
 			return {
@@ -91,7 +94,8 @@
 				pageName: '谐波频谱',
 				scrollHeight: '',
 				tabNum: 1,
-				option:{},
+				option1:{},
+				option2:{},
 				winWidth:0,
 				current:0,
 				picHeight:''
@@ -105,6 +109,8 @@
 				var winrate = 750 / winWidth;
 				var winHeight = sys.windowHeight;
 				var statusBarHeight = sys.statusBarHeight;
+				var picHeight = winHeight-400/winrate;
+				that.picHeight =(picHeight*winrate)+'rpx'
 				that.scrollHeight = parseInt((winHeight - statusBarHeight) * winrate - 254) + 'rpx';
 			},
 			changeTab(tabNum) {
@@ -197,6 +203,7 @@
 						}
 					},
 					fail() {
+						uni.hideLoading()
 						uni.showModal({
 						    title: '提示',
 						    content: '网络或服务器异常，请稍后再试',
@@ -214,7 +221,7 @@
 			},
 			drawVoltage(list1, list2) {
 				var that = this ;
-				that.option={
+				that.option1={
 					// title: {
 					// 	text: 'Wheater Statistics'
 					// },
@@ -310,21 +317,16 @@
 						}
 					]
 				}
-				var sys = uni.getSystemInfoSync();
-				var winWidth = sys.windowWidth;
-				var winHeight = sys.windowHeight;
-				var winrate = 750 / winWidth;
-				var picHeight = winHeight-400/winrate;
-				that.picHeight =(picHeight*winrate)+'rpx'
-				let canvas = that.$refs.lineChart.canvas
-				echarts.setCanvasCreator(() => canvas);
-				let lineChart = echarts.init(canvas, null, {
-					width: winWidth,
-					height: picHeight
-				})
-				canvas.setChart(lineChart)
-				lineChart.setOption(that.option)
-				that.$refs.lineChart.setChart(lineChart)
+				uni.hideLoading()
+				// let canvas = that.$refs.lineChart.canvas
+				// echarts.setCanvasCreator(() => canvas);
+				// let lineChart = echarts.init(canvas, null, {
+				// 	width: winWidth,
+				// 	height: picHeight
+				// })
+				// canvas.setChart(lineChart)
+				// lineChart.setOption(that.option)
+				// that.$refs.lineChart.setChart(lineChart)
 			},
 			getHarmRateI() {
 				var that = this;
@@ -408,6 +410,7 @@
 						}
 					},
 					fail() {
+						uni.hideLoading()
 						uni.showModal({
 						    title: '提示',
 						    content: '网络或服务器异常，请稍后再试',
@@ -425,7 +428,7 @@
 			},
 			drawCurrent(list1, list2) {
 				var that = this ;
-				that.option={
+				that.option2={
 					// title: {
 					// 	text: 'Wheater Statistics'
 					// },
@@ -521,21 +524,16 @@
 						}
 					]
 				}
-				var sys = uni.getSystemInfoSync();
-				var winWidth = sys.windowWidth;
-				var winHeight = sys.windowHeight;
-				var winrate = 750 / winWidth;
-				var picHeight = winHeight-400/winrate;
-				that.picHeight =(picHeight*winrate)+'rpx'
-				let canvas = that.$refs.lineChart2.canvas
-				echarts.setCanvasCreator(() => canvas);
-				let lineChart2 = echarts.init(canvas, null, {
-					width: winWidth,
-					height: picHeight
-				})
-				canvas.setChart(lineChart2)
-				lineChart2.setOption(that.option)
-				that.$refs.lineChart2.setChart(lineChart2)
+				uni.hideLoading()
+				// let canvas = that.$refs.lineChart2.canvas
+				// echarts.setCanvasCreator(() => canvas);
+				// let lineChart2 = echarts.init(canvas, null, {
+				// 	width: winWidth,
+				// 	height: picHeight
+				// })
+				// canvas.setChart(lineChart2)
+				// lineChart2.setOption(that.option)
+				// that.$refs.lineChart2.setChart(lineChart2)
 			}
 		},
 		onLoad(e) {
@@ -545,12 +543,17 @@
 		},
 		onReady() {
 			var that = this;
+			uni.showLoading({
+				mask:true,
+				title:'加载中...'
+			})
 			that.getHarmRateV();
 			that.getHarmRateI();
 		},
 		components: {
 			back,
-			mpvueEcharts
+			echarts
+			// mpvueEcharts
 		}
 	}
 </script>

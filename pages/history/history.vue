@@ -266,13 +266,13 @@
 				uni.navigateTo({
 					url:'../chooseLine/chooseLine'
 				});
-				uni.$on('lineInfoSelect',function(data){
+				uni.$once('lineInfoSelect',function(data){
 					that.lineInfo = data;
 					that.page=1;
 					that.statisticsList=[];
 					that.queryStatistics();
 				});
-				uni.$on('lineInfoQuery',function(data){
+				uni.$once('lineInfoQuery',function(data){
 					that.lineInfo = data;
 					that.page=1;
 					that.statisticsList=[];

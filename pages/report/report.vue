@@ -130,7 +130,7 @@
 						<view class="apply-button2" @click="jumpToMyApply(2)">查看我的申请</view>
 					</view>
 					<!-- 内容 -->
-					<scroll-view :scroll-y="scrollFlag" class="scroll-view-block"  v-else :style="{height:scrollHeight}" @scrolltolower="querySteadyList" @touchend="setScrollFlag" v-if="steadyList.length>0">
+					<scroll-view :scroll-y="scrollFlag" class="scroll-view-block"  :style="{height:scrollHeight}" @scrolltolower="querySteadyList" @touchend="setScrollFlag" v-if="steadyList.length>0">
 					<view class="content-block" v-for="steady in steadyList">
 						<view class="content-line-one">
 							<view class="content-line-one-text1">
@@ -987,14 +987,14 @@
 				uni.navigateTo({
 					url:'../chooseLine/chooseLine'
 				});
-				uni.$on('lineInfoSelect',function(data){
+				uni.$once('lineInfoSelect',function(data){
 					if(type==1){
 						that.transientLine=data
 					}else{
 						that.steadyLine=data
 					}
 				});
-				uni.$on('lineInfoQuery',function(data){
+				uni.$once('lineInfoQuery',function(data){
 					if(type==1){
 						that.transientLine=data
 					}else{

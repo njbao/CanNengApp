@@ -2,9 +2,14 @@
     "name" : "灿能云",
     "appid" : "__UNI__9894FCF",
     "description" : "",
-    "versionName" : "1.2.1",
-    "versionCode" : 121,
+    "versionName" : "1.0.3",
+    "versionCode" : 1333,
     "transformPx" : false,
+    "networkTimeout" : {
+        "request" : 60000,
+        "uploadFile" : 30000,
+        "downloadFile" : 60000
+    },
     /* 5+App特有相关 */
     "app-plus" : {
         "usingComponents" : true,
@@ -131,3 +136,5 @@
         }
     }
 }
+/* 5+App特有相关 */
+

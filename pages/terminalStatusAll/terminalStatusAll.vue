@@ -2,12 +2,20 @@
 	<view>
 		<back  :pageNameFlag="pageNameFlag" :pageName='pageName'></back>
 		<scroll-view class="terminal-status-all-block" :style="{height:scrollHeight}" scroll-y="true">
+			<view class="terminal-status-all-each-block">
+				<view class="">
+					终端名称
+				</view>
+				<view class="">
+					通讯状态
+				</view>
+			</view>
 			<view class="terminal-status-all-each-block" v-for="dev in devStatusList">
 				<view class="">
 					{{dev.devName}}
 				</view>
 				<view class="terminal-status-all-each-block-fail" v-if="dev.comInfo==0">
-					异常
+					中断
 				</view>
 				<view class="terminal-status-all-each-block-sucess" v-if="dev.comInfo==1">
 					正常

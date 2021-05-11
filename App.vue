@@ -4,6 +4,21 @@
 			 // #ifdef APP-PLUS  
 			       const _self = this;  
 			       const _handleClickPush = function(message) {
+					   switch(uni.getSystemInfoSync().platform){
+					       case 'ios':
+					   	   //导入ios UIApplication
+					   	   var UIApplication = plus.ios.import("UIApplication");  
+					   	   var app = UIApplication.sharedApplication();  
+					   	   //获取应用图标的数量  
+					   	   var oldNum = app.applicationIconBadgeNumber();  
+					   	   var newNum = oldNum - 1;  
+					   	   //设置应用图标的数量  
+					   	   plus.runtime.setBadgeNumber(newNum);  
+					   	   //导入个推原生类  
+					   	   var GeTuiSdk = plus.ios.importClass('GeTuiSdk');
+					   	   GeTuiSdk.setBadge(newNum);
+					      break;
+					   }
 					   if(typeof(message.payload)=='string'){
 						   // var payload=eval('('+message.payload+')');
 						   var payload= JSON.parse(message.payload)
@@ -33,6 +48,7 @@
 							payload.local = 1;
 							// uni.$emit("tabNum",message.payload.transmissionContent);
 							// uni.setStorageSync("tabNum",message.payload.transmissionContent)
+							
 							_self.createMessage(message.payload.title,JSON.stringify(payload),message.payload.content)
 						}else{
 							// var payload=eval('('+message.payload+')');
