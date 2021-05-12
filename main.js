@@ -7,8 +7,8 @@ Vue.config.productionTip = false
 // 挂载 全局变量
 Vue.prototype.devCode = "2aaecd0b124df819eda75e639a1f91fd";
 // Vue.prototype.serverUrl = "https://pqmcc.com:8040/shiningCloud";
-Vue.prototype.serverUrl = "http://112.4.156.196:8040/shiningCloud";
-// Vue.prototype.serverUrl = "http://www.pqmcc.com:8040/shiningCloud";
+// Vue.prototype.serverUrl = "http://112.4.156.196:8040/shiningCloud";
+Vue.prototype.serverUrl = "http://pqmcc.com:8040/shiningCloud";
 Vue.prototype.key = "f81804778c89c779";
 Vue.prototype.getCid=function(){
 				var that = this 

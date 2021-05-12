@@ -279,64 +279,26 @@ var render = function() {
               _c(
                 "v-uni-view",
                 { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
-                [_vm._v("登录注册即表示同意")]
-              ),
-              _c(
-                "v-uni-view",
-                {
-                  staticClass: _vm._$g(6, "sc"),
-                  attrs: { _i: 6 },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
-                },
-                [_vm._v("用户协议、")]
-              ),
-              _c(
-                "v-uni-view",
-                {
-                  staticClass: _vm._$g(7, "sc"),
-                  attrs: { _i: 7 },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
-                },
-                [_vm._v("隐私协议")]
-              )
-            ],
-            1
-          ),
-          _c(
-            "v-uni-view",
-            { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
-            [
-              _c(
-                "v-uni-view",
-                { staticClass: _vm._$g(9, "sc"), attrs: { _i: 9 } },
                 [_vm._v("+86")]
               ),
               _c("v-uni-image", {
-                staticClass: _vm._$g(10, "sc"),
-                attrs: { src: _vm._$g(10, "a-src"), _i: 10 }
+                staticClass: _vm._$g(6, "sc"),
+                attrs: { src: _vm._$g(6, "a-src"), _i: 6 }
               }),
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(11, "sc"), attrs: { _i: 11 } },
+                { staticClass: _vm._$g(7, "sc"), attrs: { _i: 7 } },
                 [
                   _c("v-uni-input", {
-                    staticClass: _vm._$g(12, "sc"),
+                    staticClass: _vm._$g(8, "sc"),
                     attrs: {
                       placeholder: "输入手机号",
                       "placeholder-class": "phone-placeholder",
                       type: "number",
                       maxlength: "11",
                       "confirm-type": "done",
-                      value: _vm._$g(12, "a-value"),
-                      _i: 12
+                      value: _vm._$g(8, "a-value"),
+                      _i: 8
                     },
                     on: {
                       input: function($event) {
@@ -347,12 +309,12 @@ var render = function() {
                 ],
                 1
               ),
-              _vm._$g(13, "i")
+              _vm._$g(9, "i")
                 ? _c(
                     "v-uni-view",
                     {
-                      staticClass: _vm._$g(13, "sc"),
-                      attrs: { _i: 13 },
+                      staticClass: _vm._$g(9, "sc"),
+                      attrs: { _i: 9 },
                       on: {
                         click: function($event) {
                           return _vm.$handleViewEvent($event)
@@ -361,8 +323,8 @@ var render = function() {
                     },
                     [
                       _c("v-uni-image", {
-                        staticClass: _vm._$g(14, "sc"),
-                        attrs: { src: _vm._$g(14, "a-src"), _i: 14 }
+                        staticClass: _vm._$g(10, "sc"),
+                        attrs: { src: _vm._$g(10, "a-src"), _i: 10 }
                       })
                     ],
                     1
@@ -371,22 +333,22 @@ var render = function() {
             ],
             1
           ),
-          _vm._$g(15, "i")
+          _vm._$g(11, "i")
             ? _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(15, "sc"), attrs: { _i: 15 } },
+                { staticClass: _vm._$g(11, "sc"), attrs: { _i: 11 } },
                 [
                   _c("v-uni-input", {
-                    staticClass: _vm._$g(16, "sc"),
+                    staticClass: _vm._$g(12, "sc"),
                     attrs: {
                       type: "text",
-                      password: _vm._$g(16, "a-password"),
+                      password: _vm._$g(12, "a-password"),
                       placeholder: "请输入密码",
                       "confirm-type": "done",
                       "placeholder-class": "password-placeholder",
-                      value: _vm._$g(16, "a-value"),
+                      value: _vm._$g(12, "a-value"),
                       maxlength: "18",
-                      _i: 16
+                      _i: 12
                     },
                     on: {
                       input: function($event) {
@@ -394,16 +356,16 @@ var render = function() {
                       }
                     }
                   }),
-                  _vm._$g(17, "i")
+                  _vm._$g(13, "i")
                     ? _c(
                         "v-uni-view",
-                        { staticClass: _vm._$g(17, "sc"), attrs: { _i: 17 } },
+                        { staticClass: _vm._$g(13, "sc"), attrs: { _i: 13 } },
                         [
                           _c(
                             "v-uni-view",
                             {
-                              staticClass: _vm._$g(18, "sc"),
-                              attrs: { _i: 18 },
+                              staticClass: _vm._$g(14, "sc"),
+                              attrs: { _i: 14 },
                               on: {
                                 click: function($event) {
                                   return _vm.$handleViewEvent($event)
@@ -412,22 +374,22 @@ var render = function() {
                             },
                             [
                               _c("v-uni-image", {
-                                staticClass: _vm._$g(19, "sc"),
-                                attrs: { src: _vm._$g(19, "a-src"), _i: 19 }
+                                staticClass: _vm._$g(15, "sc"),
+                                attrs: { src: _vm._$g(15, "a-src"), _i: 15 }
                               })
                             ],
                             1
                           ),
                           _c("v-uni-view", {
-                            staticClass: _vm._$g(20, "sc"),
-                            attrs: { _i: 20 }
+                            staticClass: _vm._$g(16, "sc"),
+                            attrs: { _i: 16 }
                           }),
-                          _vm._$g(21, "i")
+                          _vm._$g(17, "i")
                             ? _c(
                                 "v-uni-view",
                                 {
-                                  staticClass: _vm._$g(21, "sc"),
-                                  attrs: { _i: 21 },
+                                  staticClass: _vm._$g(17, "sc"),
+                                  attrs: { _i: 17 },
                                   on: {
                                     click: function($event) {
                                       return _vm.$handleViewEvent($event)
@@ -436,8 +398,8 @@ var render = function() {
                                 },
                                 [
                                   _c("v-uni-image", {
-                                    staticClass: _vm._$g(22, "sc"),
-                                    attrs: { src: _vm._$g(22, "a-src"), _i: 22 }
+                                    staticClass: _vm._$g(18, "sc"),
+                                    attrs: { src: _vm._$g(18, "a-src"), _i: 18 }
                                   })
                                 ],
                                 1
@@ -445,8 +407,8 @@ var render = function() {
                             : _c(
                                 "v-uni-view",
                                 {
-                                  staticClass: _vm._$g(23, "sc"),
-                                  attrs: { _i: 23 },
+                                  staticClass: _vm._$g(19, "sc"),
+                                  attrs: { _i: 19 },
                                   on: {
                                     click: function($event) {
                                       return _vm.$handleViewEvent($event)
@@ -455,8 +417,8 @@ var render = function() {
                                 },
                                 [
                                   _c("v-uni-image", {
-                                    staticClass: _vm._$g(24, "sc"),
-                                    attrs: { src: _vm._$g(24, "a-src"), _i: 24 }
+                                    staticClass: _vm._$g(20, "sc"),
+                                    attrs: { src: _vm._$g(20, "a-src"), _i: 20 }
                                   })
                                 ],
                                 1
@@ -469,8 +431,33 @@ var render = function() {
                 1
               )
             : _vm._e(),
-          _vm._$g(25, "i")
-            ? _c(
+          _c(
+            "v-uni-view",
+            { staticClass: _vm._$g(21, "sc"), attrs: { _i: 21 } },
+            [
+              _vm._$g(22, "i")
+                ? _c("v-uni-image", {
+                    staticClass: _vm._$g(22, "sc"),
+                    attrs: { src: _vm._$g(22, "a-src"), _i: 22 }
+                  })
+                : _c("v-uni-image", {
+                    staticClass: _vm._$g(23, "sc"),
+                    attrs: { src: _vm._$g(23, "a-src"), _i: 23 }
+                  }),
+              _c(
+                "v-uni-view",
+                {
+                  staticClass: _vm._$g(24, "sc"),
+                  attrs: { _i: 24 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [_vm._v("已阅读并同意")]
+              ),
+              _c(
                 "v-uni-view",
                 {
                   staticClass: _vm._$g(25, "sc"),
@@ -481,37 +468,50 @@ var render = function() {
                     }
                   }
                 },
+                [_vm._v("《用户协议》、")]
+              ),
+              _c(
+                "v-uni-view",
+                {
+                  staticClass: _vm._$g(26, "sc"),
+                  attrs: { _i: 26 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [_vm._v("《隐私协议》")]
+              )
+            ],
+            1
+          ),
+          _vm._$g(27, "i")
+            ? _c(
+                "v-uni-view",
+                {
+                  staticClass: _vm._$g(27, "sc"),
+                  attrs: { _i: 27 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
                 [
-                  _vm._$g(26, "i")
+                  _vm._$g(28, "i")
                     ? _c("v-uni-image", {
-                        staticClass: _vm._$g(26, "sc"),
-                        attrs: { src: _vm._$g(26, "a-src"), _i: 26 }
+                        staticClass: _vm._$g(28, "sc"),
+                        attrs: { src: _vm._$g(28, "a-src"), _i: 28 }
                       })
                     : _c("v-uni-image", {
-                        staticClass: _vm._$g(27, "sc"),
-                        attrs: { src: _vm._$g(27, "a-src"), _i: 27 }
+                        staticClass: _vm._$g(29, "sc"),
+                        attrs: { src: _vm._$g(29, "a-src"), _i: 29 }
                       }),
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(28, "sc"), attrs: { _i: 28 } },
-                    [_vm._v("记住密码")]
-                  )
-                ],
-                1
-              )
-            : _vm._e(),
-          _vm._$g(29, "i")
-            ? _c(
-                "v-uni-button",
-                {
-                  staticClass: _vm._$g(29, "sc"),
-                  attrs: { loading: _vm._$g(29, "a-loading"), _i: 29 }
-                },
-                [
-                  _c(
-                    "v-uni-view",
                     { staticClass: _vm._$g(30, "sc"), attrs: { _i: 30 } },
-                    [_vm._v("获取验证码")]
+                    [_vm._v("记住密码")]
                   )
                 ],
                 1
@@ -522,16 +522,7 @@ var render = function() {
                 "v-uni-button",
                 {
                   staticClass: _vm._$g(31, "sc"),
-                  attrs: {
-                    loading: _vm._$g(31, "a-loading"),
-                    disabled: _vm._$g(31, "a-disabled"),
-                    _i: 31
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
+                  attrs: { loading: _vm._$g(31, "a-loading"), _i: 31 }
                 },
                 [
                   _c(
@@ -548,13 +539,22 @@ var render = function() {
                 "v-uni-button",
                 {
                   staticClass: _vm._$g(33, "sc"),
-                  attrs: { loading: _vm._$g(33, "a-loading"), _i: 33 }
+                  attrs: {
+                    loading: _vm._$g(33, "a-loading"),
+                    disabled: _vm._$g(33, "a-disabled"),
+                    _i: 33
+                  },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
                 },
                 [
                   _c(
                     "v-uni-view",
                     { staticClass: _vm._$g(34, "sc"), attrs: { _i: 34 } },
-                    [_vm._v("登录")]
+                    [_vm._v("获取验证码")]
                   )
                 ],
                 1
@@ -565,16 +565,7 @@ var render = function() {
                 "v-uni-button",
                 {
                   staticClass: _vm._$g(35, "sc"),
-                  attrs: {
-                    loading: _vm._$g(35, "a-loading"),
-                    disabled: _vm._$g(35, "a-disabled"),
-                    _i: 35
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.$handleViewEvent($event)
-                    }
-                  }
+                  attrs: { loading: _vm._$g(35, "a-loading"), _i: 35 }
                 },
                 [
                   _c(
@@ -588,14 +579,40 @@ var render = function() {
             : _vm._e(),
           _vm._$g(37, "i")
             ? _c(
+                "v-uni-button",
+                {
+                  staticClass: _vm._$g(37, "sc"),
+                  attrs: {
+                    loading: _vm._$g(37, "a-loading"),
+                    disabled: _vm._$g(37, "a-disabled"),
+                    _i: 37
+                  },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(38, "sc"), attrs: { _i: 38 } },
+                    [_vm._v("登录")]
+                  )
+                ],
+                1
+              )
+            : _vm._e(),
+          _vm._$g(39, "i")
+            ? _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(37, "sc"), attrs: { _i: 37 } },
+                { staticClass: _vm._$g(39, "sc"), attrs: { _i: 39 } },
                 [
                   _c(
                     "v-uni-view",
                     {
-                      staticClass: _vm._$g(38, "sc"),
-                      attrs: { _i: 38 },
+                      staticClass: _vm._$g(40, "sc"),
+                      attrs: { _i: 40 },
                       on: {
                         click: function($event) {
                           return _vm.$handleViewEvent($event)
@@ -607,8 +624,8 @@ var render = function() {
                   _c(
                     "v-uni-view",
                     {
-                      staticClass: _vm._$g(39, "sc"),
-                      attrs: { _i: 39 },
+                      staticClass: _vm._$g(41, "sc"),
+                      attrs: { _i: 41 },
                       on: {
                         click: function($event) {
                           return _vm.$handleViewEvent($event)
@@ -621,16 +638,16 @@ var render = function() {
                 1
               )
             : _vm._e(),
-          _vm._$g(40, "i")
+          _vm._$g(42, "i")
             ? _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(40, "sc"), attrs: { _i: 40 } },
+                { staticClass: _vm._$g(42, "sc"), attrs: { _i: 42 } },
                 [
                   _c(
                     "v-uni-view",
                     {
-                      staticClass: _vm._$g(41, "sc"),
-                      attrs: { _i: 41 },
+                      staticClass: _vm._$g(43, "sc"),
+                      attrs: { _i: 43 },
                       on: {
                         click: function($event) {
                           return _vm.$handleViewEvent($event)
@@ -641,13 +658,13 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(42, "sc"), attrs: { _i: 42 } },
+                    { staticClass: _vm._$g(44, "sc"), attrs: { _i: 44 } },
                     [
                       _c(
                         "v-uni-view",
                         {
-                          staticClass: _vm._$g(43, "sc"),
-                          attrs: { _i: 43 },
+                          staticClass: _vm._$g(45, "sc"),
+                          attrs: { _i: 45 },
                           on: {
                             click: function($event) {
                               return _vm.$handleViewEvent($event)
@@ -657,14 +674,14 @@ var render = function() {
                         [_vm._v("忘记密码")]
                       ),
                       _c("v-uni-view", {
-                        staticClass: _vm._$g(44, "sc"),
-                        attrs: { _i: 44 }
+                        staticClass: _vm._$g(46, "sc"),
+                        attrs: { _i: 46 }
                       }),
                       _c(
                         "v-uni-view",
                         {
-                          staticClass: _vm._$g(45, "sc"),
-                          attrs: { _i: 45 },
+                          staticClass: _vm._$g(47, "sc"),
+                          attrs: { _i: 47 },
                           on: {
                             click: function($event) {
                               return _vm.$handleViewEvent($event)
@@ -682,7 +699,7 @@ var render = function() {
             : _vm._e(),
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(46, "sc"), attrs: { _i: 46 } },
+            { staticClass: _vm._$g(48, "sc"), attrs: { _i: 48 } },
             [_vm._v("—— 寻电能质量之因，解电能质量之惑，治电能质量之本 ——")]
           )
         ],
@@ -1572,7 +1589,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 15);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "/* 主体开始 */\n.content-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: vertical;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: column;\r\n\t        flex-direction: column;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\tmargin-left: 40rpx;\r\n\tmargin-top: 54rpx;\r\n\tmargin-right: 40rpx;\n}\n.login-explain{\r\n\t/* 字体PingFangSC-Regular */\r\n\tfont-size: 56rpx;\r\n\tcolor: #000000;\r\n\t/* color: #3928FC; */\n}\n.login-detail{\r\n\twidth: 494rpx;\r\n\theight: 40rpx;\r\n\tmargin-top: 14rpx;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\n}\n.login-agreement{\r\n\tfont-size: 28rpx;\r\n\tcolor: #999999;\r\n\twhite-space: nowrap;\n}\n.login-user{\r\n\tfont-size: 28rpx;\r\n\tcolor: #517FB0;\r\n\twhite-space: nowrap;\n}\r\n/* 手机号开始 */\n.phone-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\tmargin-top: 142rpx;\r\n\tborder-bottom: solid 1px #D9D9D9;\r\n\twidth: 670rpx;\r\n\t-webkit-box-align: end;\r\n\t-webkit-align-items: flex-end;\r\n\t        align-items: flex-end;\n}\n.phone-pic{\r\n\twidth: 20rpx;\r\n\theight: 20rpx;\r\n\tmargin-bottom: 32rpx;\n}\n.num{\r\n\tfont-size: 30rpx;\r\n\tcolor: #333333;\r\n\tmargin-bottom: 24rpx;\n}\n.pull{\r\n\twidth: 44rpx;\r\n\theight: 44rpx;\r\n\tmargin-bottom: 20rpx;\n}\n.phone{\r\n\t margin-left: 10rpx;\r\n\tmargin-bottom: 12rpx;\n}\n.phone-placeholder{\r\n\tcolor:#CCCCCC;\r\n\tfont-size:30rpx;\n}\n.password-placeholder{\r\n\tcolor:#CCCCCC;\r\n\tfont-size:30rpx;\n}\n.phone-input{\r\n\tfont-size: 44rpx;\r\n\tcolor: #333333;\n}\r\n/* 手机号结束 */\r\n/* 密码开始 */\n.password-block{\r\n\tmargin-top: 54rpx;\r\n\tborder-bottom: solid 1px #D9D9D9;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: justify;\r\n\t-webkit-justify-content: space-between;\r\n\t        justify-content: space-between;\n}\n.see-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.reset-block{\r\n\twidth: 88rpx;\r\n\theight: 88rpx;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t-webkit-justify-content: center;\r\n\t        justify-content: center;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.close{\r\n\twidth: 20rpx;\r\n\theight: 20rpx;\n}\n.see{\r\n\twidth: 36rpx;\r\n\theight: 36rpx;\n}\n.line{\r\n\twidth:1px;\r\n\theight:24rpx;\r\n\tbackground:rgba(217,217,217,1);\r\n\tmargin-left: 20rpx;\r\n\tmargin-right: 20rpx;\n}\r\n/* 密码结束 */\r\n/* 记住我开始 */\n.rememberMe-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\theight: 40rpx;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\r\n\tmargin-top: 20rpx;\n}\n.rememberMe-pic{\r\n\theight: 28rpx;\r\n\twidth: 28rpx;\n}\n.rememberMe-text{\r\n\tcolor: #333333;\r\n\tfont-size: 28rpx;\r\n\tmargin-left: 14rpx;\n}\r\n/* 记住我结束 */\r\n/* 获取验证码按钮开始 */\n.login-vercode{\r\n\twidth: 658rpx;\r\n\theight: 80rpx;\r\n\tmargin-top: 80rpx;\r\n\tbackground: #3982FC;\r\n\tborder-radius: 20px;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: center;\r\n\t-webkit-justify-content: center;\r\n\t        justify-content: center;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.text{\r\n\t\tcolor: #6CA3FF;\r\n\t\tfont-size: 32rpx;\n}\n.textHigh{\r\n\t\tcolor: #FFFFFF;\r\n\t\tfont-size: 32rpx;\n}\r\n/* 获取验证码按钮结束 */\r\n/* 其他方式登录开始 */\n.login-other{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: justify;\r\n\t-webkit-justify-content: space-between;\r\n\t        justify-content: space-between;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\r\n\tmargin-top: 34rpx;\n}\n.login-account{\r\n\twidth: 198rpx;\r\n\theight: 34rpx;\r\n\tcolor: #507EB0;\r\n\tfont-size: 24rpx;\n}\n.login-fast{\r\n\twidth: 102rpx;\r\n\theight: 34rpx;\r\n\tcolor: #507EB0;\r\n\tfont-size: 24rpx;\n}\n.login-right{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.login-line{\r\n\twidth:1px;\r\n\theight:24rpx;\r\n\tbackground:rgba(217,217,217,1);\r\n\tmargin-left: 20rpx;\r\n\tmargin-right: 20rpx;\n}\r\n/* 其他方式登录结束 */\r\n/* 介绍 */\n.introduce-block{\r\n\tmargin-top: 462rpx;\r\n\twidth: 680rpx;\r\n\theight: 34rpx;\r\n\tcolor: #D9D9D9;\r\n\tfont-size: 24rpx;\r\n\twhite-space: nowrap;\r\n\ttext-align: center;\n}\r\n/* 主体结束 */\r\n", ""]);
+exports.push([module.i, "/* 主体开始 */\n.content-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: vertical;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: column;\r\n\t        flex-direction: column;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\tmargin-left: 40rpx;\r\n\tmargin-top: 54rpx;\r\n\tmargin-right: 40rpx;\n}\n.login-explain{\r\n\t/* 字体PingFangSC-Regular */\r\n\tfont-size: 56rpx;\r\n\tcolor: #000000;\r\n\t/* color: #3928FC; */\n}\n.login-detail{\r\n\twidth: 494rpx;\r\n\theight: 40rpx;\r\n\tmargin-top: 14rpx;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\n}\n.login-agreement{\r\n\tfont-size: 28rpx;\r\n\tcolor: #999999;\r\n\twhite-space: nowrap;\r\n\tmargin-left: 10rpx;\n}\n.login-user{\r\n\tfont-size: 28rpx;\r\n\tcolor: #517FB0;\r\n\twhite-space: nowrap;\n}\r\n/* 手机号开始 */\n.phone-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\tmargin-top: 142rpx;\r\n\tborder-bottom: solid 1px #D9D9D9;\r\n\twidth: 670rpx;\r\n\t-webkit-box-align: end;\r\n\t-webkit-align-items: flex-end;\r\n\t        align-items: flex-end;\n}\n.phone-pic{\r\n\twidth: 20rpx;\r\n\theight: 20rpx;\r\n\tmargin-bottom: 32rpx;\n}\n.num{\r\n\tfont-size: 30rpx;\r\n\tcolor: #333333;\r\n\tmargin-bottom: 24rpx;\n}\n.pull{\r\n\twidth: 44rpx;\r\n\theight: 44rpx;\r\n\tmargin-bottom: 20rpx;\n}\n.phone{\r\n\t margin-left: 10rpx;\r\n\tmargin-bottom: 12rpx;\n}\n.phone-placeholder{\r\n\tcolor:#CCCCCC;\r\n\tfont-size:30rpx;\n}\n.password-placeholder{\r\n\tcolor:#CCCCCC;\r\n\tfont-size:30rpx;\n}\n.phone-input{\r\n\tfont-size: 44rpx;\r\n\tcolor: #333333;\n}\r\n/* 手机号结束 */\r\n/* 密码开始 */\n.password-block{\r\n\tmargin-top: 54rpx;\r\n\tborder-bottom: solid 1px #D9D9D9;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: justify;\r\n\t-webkit-justify-content: space-between;\r\n\t        justify-content: space-between;\n}\n.see-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.reset-block{\r\n\twidth: 88rpx;\r\n\theight: 88rpx;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t-webkit-justify-content: center;\r\n\t        justify-content: center;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.close{\r\n\twidth: 20rpx;\r\n\theight: 20rpx;\n}\n.see{\r\n\twidth: 36rpx;\r\n\theight: 36rpx;\n}\n.line{\r\n\twidth:1px;\r\n\theight:24rpx;\r\n\tbackground:rgba(217,217,217,1);\r\n\tmargin-left: 20rpx;\r\n\tmargin-right: 20rpx;\n}\r\n/* 密码结束 */\r\n/* 记住我开始 */\n.rememberMe-block{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\theight: 40rpx;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\r\n\tmargin-top: 20rpx;\n}\n.rememberMe-pic{\r\n\theight: 28rpx;\r\n\twidth: 28rpx;\n}\n.rememberMe-text{\r\n\tcolor: #333333;\r\n\tfont-size: 28rpx;\r\n\tmargin-left: 14rpx;\n}\r\n/* 记住我结束 */\r\n/* 获取验证码按钮开始 */\n.login-vercode{\r\n\twidth: 658rpx;\r\n\theight: 80rpx;\r\n\tmargin-top: 80rpx;\r\n\tbackground: #3982FC;\r\n\tborder-radius: 20px;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: center;\r\n\t-webkit-justify-content: center;\r\n\t        justify-content: center;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.text{\r\n\t\tcolor: #6CA3FF;\r\n\t\tfont-size: 32rpx;\n}\n.textHigh{\r\n\t\tcolor: #FFFFFF;\r\n\t\tfont-size: 32rpx;\n}\r\n/* 获取验证码按钮结束 */\r\n/* 其他方式登录开始 */\n.login-other{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: justify;\r\n\t-webkit-justify-content: space-between;\r\n\t        justify-content: space-between;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\r\n\tmargin-top: 34rpx;\n}\n.login-account{\r\n\twidth: 198rpx;\r\n\theight: 34rpx;\r\n\tcolor: #507EB0;\r\n\tfont-size: 24rpx;\n}\n.login-fast{\r\n\twidth: 102rpx;\r\n\theight: 34rpx;\r\n\tcolor: #507EB0;\r\n\tfont-size: 24rpx;\n}\n.login-right{\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -webkit-flex;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: horizontal;\r\n\t-webkit-box-direction: normal;\r\n\t-webkit-flex-direction: row;\r\n\t        flex-direction: row;\r\n\t-webkit-box-pack: start;\r\n\t-webkit-justify-content: flex-start;\r\n\t        justify-content: flex-start;\r\n\t-webkit-box-align: center;\r\n\t-webkit-align-items: center;\r\n\t        align-items: center;\n}\n.login-line{\r\n\twidth:1px;\r\n\theight:24rpx;\r\n\tbackground:rgba(217,217,217,1);\r\n\tmargin-left: 20rpx;\r\n\tmargin-right: 20rpx;\n}\r\n/* 其他方式登录结束 */\r\n/* 介绍 */\n.introduce-block{\r\n\tmargin-top: 462rpx;\r\n\twidth: 680rpx;\r\n\theight: 34rpx;\r\n\tcolor: #D9D9D9;\r\n\tfont-size: 24rpx;\r\n\twhite-space: nowrap;\r\n\ttext-align: center;\n}\r\n/* 主体结束 */\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -19241,7 +19258,7 @@ var render = function() {
           _c(
             "v-uni-view",
             { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
-            [_vm._v("灿能云 1.0.2")]
+            [_vm._v("灿能云 1.0.4")]
           )
         ],
         1

@@ -3,11 +3,7 @@
 		<back :errorMsg="errorMsg" :showFlag="showFlag" :backShowFlag="backShowFlag"></back>
 		<view class="content-block">
 			<view class="login-explain">欢迎登录灿能云</view>
-			<view class="login-detail">
-				<view class="login-agreement">登录注册即表示同意</view>
-				<view class="login-user" @click="jumpToUserAgreement">用户协议、</view>
-				<view class="login-user" @click="jumpToPrivacyAgreement">隐私协议</view>
-			</view>
+			
 			
 			<view class="phone-block">
 				<view class="num">+86</view>
@@ -33,6 +29,13 @@
 						<image src="../../static/pic/see_close.png" class="see"></image>
 					</view>
 				</view>
+			</view>
+			<view class="rememberMe-block">
+				<image src="../../static/pic/choose.png" class="rememberMe-pic" v-if="readFlag==1"></image>
+				<image src="../../static/pic/nochoose.png" class="rememberMe-pic" v-else></image>
+				<view class="rememberMe-text"  @click="changeReadFlag">已阅读并同意</view>
+				<view class="login-user" @click="jumpToUserAgreement">《用户协议》、</view>
+				<view class="login-user" @click="jumpToPrivacyAgreement">《隐私协议》</view>
 			</view>
 			<view class="rememberMe-block" @click="changeRememberFlag" v-if="loginType==1">
 				<image src="../../static/pic/choose.png" class="rememberMe-pic" v-if="rememberFlag==1"></image>
@@ -91,7 +94,8 @@
 				resetFlag:0,
 				backShowFlag:0,
 				rememberFlag:1,
-				disabledFlag:false
+				disabledFlag:false,
+				readFlag:0
 			}
 		},
 		methods: {
@@ -101,6 +105,14 @@
 					that.rememberFlag=1;
 				}else{
 					that.rememberFlag=0
+				}
+			},
+			changeReadFlag(){
+				var that = this;
+				if(that.readFlag==0){
+					that.readFlag=1;
+				}else{
+					that.readFlag=0
 				}
 			},
 			changeClass(e){
@@ -158,6 +170,17 @@
 			},
 			getVercode(){
 				var that = this;
+				if(that.readFlag == 0){
+					that.showFlag=1;
+					that.errorMsg='请先阅读并同意协议';
+					that.loadingFlag=false;
+					setTimeout(function() {
+						that.errorMsg='';
+						that.showFlag=0;
+						that.disabledFlag=false;
+					}, 5000);
+					return
+				}
 				that.disabledFlag=true;
 				that.loadingFlag=true;
 				if(that.phoneNum.length!=11){
@@ -221,6 +244,17 @@
 			},
 			loginIn(account,password){
 				var that = this;
+				if(that.readFlag == 0){
+					that.showFlag=1;
+					that.errorMsg='请先阅读并同意协议';
+					that.loadingFlag=false;
+					setTimeout(function() {
+						that.errorMsg='';
+						that.showFlag=0;
+						that.disabledFlag=false;
+					}, 5000);
+					return
+				}
 				that.loadingFlag=true;
 				that.disabledFlag=true;
 				if(account.length!=11){
@@ -253,6 +287,7 @@
 							if(that.rememberFlag==1&&that.phoneNum!=null&&that.phoneNum!=undefined&&that.phoneNum!=''&&that.password!=null&&that.password!=undefined&&that.password!=''){
 								uni.setStorageSync("account",that.phoneNum);
 								uni.setStorageSync("password",that.password);
+								uni.setStorageSync("readFlag",that.readFlag);
 							}
 							uni.setStorageSync('loginType',1);
 							uni.setStorageSync("loginTime",new Date())
@@ -350,13 +385,16 @@
 					if((new Date()-loginTime)/(1000*24*60*60)>30||(new Date()-loginTime)<0){
 						uni.removeStorageSync("account");
 						uni.removeStorageSync("password");
+						uni.removeStorageSync("readFlag");
 					}else{
 						if(uni.getStorageSync("loginType")==1){
 							var account = uni.getStorageSync("account");
 							var password = uni.getStorageSync("password");
+							var readFlag = uni.getStorageSync("readFlag");
 							if(account!=null&&account!=undefined&&account!=''&&password!=null&&password!=undefined&&password!=''){
 								that.phoneNum=account;
 								that.password=password;
+								that.readFlag = readFlag;
 								that.vercodeFlag=1;
 								that.resetFlag=1;
 								that.seeFlag=1;
@@ -379,13 +417,16 @@
 					if((new Date()-loginTime)/(1000*24*60*60)>30||(new Date()-loginTime)<0){
 						uni.removeStorageSync("account");
 						uni.removeStorageSync("password");
+						uni.removeStorageSync("readFlag");
 					}else{
 						var account = uni.getStorageSync("account");
 						var password = uni.getStorageSync("password");
+						var readFlag = uni.getStorageSync("readFlag");
 						if(account!=null&&account!=undefined&&account!=''&&password!=null&&password!=undefined&&password!=''){
 							that.phoneNum=account;
 							that.password=password;
 							that.vercodeFlag=1;
+							that.readFlag = readFlag;
 							that.resetFlag=1;
 							that.seeFlag=1;
 							that.passwordFlag=1;
