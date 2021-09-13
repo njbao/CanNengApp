@@ -4,7 +4,7 @@
 		<view class="error-block">
 			<image src="../../static/pic/aboutUs.png" class="us-pic"></image>
 			<view class="us-text">
-				灿能云 1.0.4
+				灿能云 1.0.6
 			</view>
 		</view>
 	</view>

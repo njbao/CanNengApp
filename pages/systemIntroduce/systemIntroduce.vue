@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view>
-			<web-view src="http://112.4.156.196:8040/shiningCloud/business/appInfo"></web-view>
+			<web-view :src="serverUrl2+'/shiningCloud/business/appInfo'"></web-view>
 		</view>
 	</view>
 </template>

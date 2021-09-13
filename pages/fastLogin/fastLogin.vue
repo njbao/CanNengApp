@@ -42,7 +42,7 @@
 				phoneNum:'',
 				resetFlag:0,
 				nextFlag:0,
-				chooseFlag:1,
+				chooseFlag:0,
 				errorMsg:'',
 				disabledFlag:false
 			}

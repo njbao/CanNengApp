@@ -8,7 +8,9 @@ Vue.config.productionTip = false
 Vue.prototype.devCode = "2aaecd0b124df819eda75e639a1f91fd";
 // Vue.prototype.serverUrl = "https://pqmcc.com:8040/shiningCloud";
 // Vue.prototype.serverUrl = "http://112.4.156.196:8040/shiningCloud";
-Vue.prototype.serverUrl = "http://pqmcc.com:8040/shiningCloud";
+// Vue.prototype.serverUrl = "http://www.pqmcc.com/shiningCloud";
+Vue.prototype.serverUrl = "http://112.4.144.18:8040/shiningCloud";
+Vue.prototype.serverUrl2 = "http://112.4.144.18:8040";
 Vue.prototype.key = "f81804778c89c779";
 Vue.prototype.getCid=function(){
 				var that = this 
@@ -16,10 +18,10 @@ Vue.prototype.getCid=function(){
 				var cid = plus.push.getClientInfo().clientid;
 				if(cid!=null&&cid!='null'&&cid!=''&&cid!=undefined){
 					uni.setStorageSync('cid',cid);
-					console.log('setCid:'+cid);
+					// console.log('setCid:'+cid);
 					var cidAES = encrypt.Encrypt(cid,'f81804778c89c779');
 					uni.setStorageSync('cidAES',cidAES);
-					console.log('cidAES:'+cidAES);
+					// console.log('cidAES:'+cidAES);
 				}else{
 					setTimeout(function() {
 						that.getCid();
