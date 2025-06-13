@@ -8,13 +8,8 @@ page{
 /* 主体开始 */
 .data-body{
 	background: #F0F0F0;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
+	flex-direction: column;
 }
 /* 标题开始 */
 .data-title{
@@ -22,19 +17,10 @@ page{
 	height: 88rpx;
 }
 .data-title-text{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	font-size: 32rpx;
 	color: #171F24;
 	height: 88rpx;
@@ -43,18 +29,10 @@ page{
 /* tab选项开始 */
 .data-tab{
 	height: 64rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-justify-content: space-around;
-	        justify-content: space-around;
-	-webkit-box-align: end;
-	-webkit-align-items: flex-end;
-	        align-items: flex-end;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
 	background: #FFFFFF 100%;
 	margin-top: 2rpx;
 	position: relative;
@@ -71,19 +49,10 @@ page{
 	position: absolute;
 	left: 204rpx;
 	top: 10rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .tab-noread-num-steady{
 	width: 36rpx;
@@ -97,19 +66,10 @@ page{
 	position: absolute;
 	left: 454rpx;
 	top: 10rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .tab-noread-num-terminal{
 	width: 36rpx;
@@ -123,139 +83,78 @@ page{
 	position: absolute;
 	left: 704rpx;
 	top: 10rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .tab{
 	height: 64rpx;
 	font-size: 28rpx;
 	color: #333333;
 	white-space: nowrap;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: end;
-	-webkit-align-items: flex-end;
-	        align-items: flex-end;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .tab-click{
 	font-size: 28rpx;
 	color: #3982FC;
 	white-space: nowrap;
 	border-bottom: solid 2rpx #3982FC;
+	height: 64rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 /* tab选项结束 */
 /* 暂态开始 */
 /* 下拉刷新开始 */
 .pull-block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	color: #666666;
 	font-size: 24rpx;
 }
 /* 下拉刷新结束 */
 .transient-block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 .transient-event-block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	margin-top: 20rpx;
 	background: #FFFFFF 100%;
 	position: relative;
 }
 .steady-event-block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	margin-top: 20rpx;
 	background: #FFFFFF 100%;
 	position: relative;
 }
 .transient-event{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 	height: 260rpx;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	align-items: center;
 }
 .steady-event{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 	height: 180rpx;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	align-items: center;
 }
 .transient-event-time{
 	font-size: 24rpx;
@@ -283,16 +182,9 @@ page{
 	top: 22rpx;
 }
 .transient-event-content{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	margin-left: 20rpx;
 	width: 566rpx;
 }
@@ -303,19 +195,10 @@ page{
 	color: #000000;
 }
 .line-two{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
-	-webkit-box-align: baseline ;
-	-webkit-align-items: baseline ;
-	        align-items: baseline ;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline ;
 }
 .line-two-left{
 	width: 200rpx;
@@ -337,19 +220,10 @@ page{
 	margin-left: 16rpx;
 }
 .line-three{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
-	-webkit-box-align: baseline ;
-	-webkit-align-items: baseline ;
-	        align-items: baseline ;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline ;
 	margin-top: 21rpx;
 }
 .line-three-left{
@@ -367,5 +241,13 @@ page{
 	margin-left: 16rpx;
 }
 /* 暂态结束 */
+.no-data{
+	color: #FF5059;
+	/* background: #FFFFFF; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 /* 主体结束 */
 

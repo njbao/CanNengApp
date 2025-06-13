@@ -2,8 +2,8 @@
     "name" : "灿能云",
     "appid" : "__UNI__9894FCF",
     "description" : "",
-    "versionName" : "1.0.6",
-    "versionCode" : 1053,
+    "versionName" : "1.0.7",
+    "versionCode" : 1055,
     "transformPx" : false,
     "networkTimeout" : {
         "request" : 60000,
@@ -61,12 +61,14 @@
                     "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
                     "<uses-permission android:name=\"android.permission.WRITE_SMS\"/>"
-                ]
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
             },
             /* ios打包配置 */
             "ios" : {
                 "UIUserInterfaceStyle" : "Automatic",
-                "idfa" : false
+                "idfa" : false,
+                "dSYMs" : false
             },
             /* SDK配置 */
             "sdkConfigs" : {
@@ -109,6 +111,10 @@
                         "spotlight@3x" : "unpackage/res/icons/120x120.png"
                     }
                 }
+            },
+            "splashscreen" : {
+                "useOriginalMsgbox" : true,
+                "androidStyle" : "common"
             }
         }
     },

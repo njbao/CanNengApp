@@ -1,1 +1,0 @@
-<view><back vue-id="1" pageNameFlag="{{pageNameFlag}}" showFlag="{{showFlag}}" pageName="{{pageName}}" bind:__l="__l"></back>系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍</view>

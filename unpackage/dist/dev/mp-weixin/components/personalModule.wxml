@@ -1,1 +1,1 @@
-<view class="personalModule-body"><image class="pic" src="{{imgsrc}}"></image><view class="name-block">{{''+name+''}}</view><image class="jumpTo" src="../../static/pic/jump.png"></image></view>
+<view class="personalModule-body"><image class="pic" src="{{imgsrc}}"></image><view class="name-block">{{''+name+''}}</view><image class="jumpTo" src="../static/pic/jump.png"></image></view>

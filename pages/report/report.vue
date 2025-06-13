@@ -1068,7 +1068,6 @@
 			if(that.judgeLogin()){
 				var today = new Date().getMilliseconds();
 				that.userInfo = uni.getStorageSync('userInfo');
-				console.log(that.userInfo.userId)
 				that.scrollH();
 				that.endDate=that.formatTime(new Date());
 				that.startDate=that.endDate.substring(0,8)+'01';

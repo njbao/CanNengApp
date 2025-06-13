@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "back": "/components/back",
-    "keyboard": "/components/keyboard"
-  }
-}

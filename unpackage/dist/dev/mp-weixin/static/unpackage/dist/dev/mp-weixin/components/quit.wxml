@@ -1,1 +1,0 @@
-<view class="body"><view class="quit-block"><image class="quitt" src="../static/pic/normal.png"></image></view><block wx:if="{{showFLag==1}}"><view class="errorMsg"><view class="text">{{errorMsg}}</view></view></block></view>

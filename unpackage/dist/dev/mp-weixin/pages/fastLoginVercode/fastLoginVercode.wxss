@@ -1,35 +1,17 @@
 .text_block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 	margin-top: 60rpx;
 }
 .phone-block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 	border-bottom: solid 1px #D9D9D9;
 	width: 670rpx;
-	-webkit-box-align: end;
-	-webkit-align-items: flex-end;
-	        align-items: flex-end;
+	align-items: flex-end;
 	margin-top: 60rpx;
 }
 .phoneNum{
@@ -52,15 +34,9 @@
 .reset-block{
 	width: 88rpx;
 	height: 88rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 .vercode-pic{
 	width: 20rpx;
@@ -73,19 +49,10 @@
 	border-radius:12px;
 	color:rgba(255,255,255,1);
 	background: rgba(57,130,252,1);
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	white-space: nowrap;
 	margin-bottom: 22rpx;
 }
@@ -96,19 +63,10 @@
 	border-radius:12px;
 	color:rgba(255,255,255,1);
 	background: rgba(217,217,217,1);
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	white-space: nowrap;
 	margin-bottom: 22rpx;
 }
@@ -119,19 +77,10 @@
 	margin-top: 80rpx;
 	background: #3982FC;
 	border-radius: 20px;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .text{
 		color: #6CA3FF;

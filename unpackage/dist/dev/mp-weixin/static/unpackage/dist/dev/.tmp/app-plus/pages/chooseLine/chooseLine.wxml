@@ -1,1 +1,0 @@
-<view><back vue-id="1" errorMsg="{{errorMsg}}" showFlag="{{showFlag}}" bind:__l="__l"></back></view>

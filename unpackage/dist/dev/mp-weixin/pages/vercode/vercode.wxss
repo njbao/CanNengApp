@@ -1,28 +1,14 @@
 .body{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	width: 100%;
 }
 /* 主体开始 */
 .content-block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	margin-left: 40rpx;
 	margin-top: 28rpx;
 	margin-right: 40rpx;
@@ -37,16 +23,9 @@
 	width: 494rpx;
 	height: 40rpx;
 	margin-top: 14rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 .login-agreement{
 	font-size: 28rpx;
@@ -62,16 +41,9 @@
 /* 文字结束 */
 /* 验证码开始 */
 .num-block{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	        justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
 	margin-top: 116rpx;
 }
 .num-view{
@@ -106,16 +78,9 @@
 /* 主体结束 */
 /* 键盘开始 */
 .keyboard{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	height: 514rpx;
 	background: rgba(210,213,219,0.90);
 	margin-top: 222rpx;
@@ -124,16 +89,9 @@
 	width: 100%;
 }
 .keyboard-line{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+	flex-direction: row;
+	justify-content: center;
 }
 .button-item{
 	width: 234rpx;
@@ -142,38 +100,20 @@
 	box-shadow: 0 1px 0 0 #848688;
 	border-radius: 5px;
 	margin: 12rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .button-item-delete{
 	width: 234rpx;
 	height: 92rpx;
 	border-radius: 5px;
 	margin: 12rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .delete{
 	width: 46rpx;

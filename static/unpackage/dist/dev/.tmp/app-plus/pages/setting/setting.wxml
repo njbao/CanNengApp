@@ -1,1 +1,0 @@
-<view><back vue-id="1" pageNameFlag="{{pageNameFlag}}" showFlag="{{showFlag}}" pageName="{{pageName}}" bind:__l="__l"></back><view class="option-block"><view data-event-opts="{{[['tap',[['exit',['$event']]]]]}}" class="exit-block" bindtap="__e">退出登录</view></view></view>

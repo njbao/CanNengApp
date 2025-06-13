@@ -1,6 +1,7 @@
 {
   "usingComponents": {
+    "uni-calendar": "/components/uni-calendar/uni-calendar",
     "back": "/components/back",
-    "uni-calendar": "/components/uni-calendar/uni-calendar"
+    "echarts": "/components/myEcharts/echarts"
   }
 }

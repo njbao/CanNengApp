@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "back": "/components/back"
+    "back": "/components/back",
+    "echarts": "/components/myEcharts/echarts"
   }
 }
